@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 		update_submodules: {
 	        default: {
 	            options: {
-	                // default command line parameters will be used: --init --recursive
+	            	params: '--init --recursive --force'
 	            }
 	        }
 		},		

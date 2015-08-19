@@ -64,12 +64,12 @@
 
                     <execution>
 						<phase>compile</phase>                        
-                        <id>grunt build.release</id>
+                        <id>grunt</id>
                         <goals>
                             <goal>grunt</goal>
                         </goals>
                         <configuration>
-                            <arguments>build.release</arguments>
+                            <arguments></arguments>
                         </configuration>
                     </execution>
 			    </executions>			    

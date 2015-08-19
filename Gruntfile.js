@@ -4,7 +4,6 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
-		
 		clean: {
 			build: ["build"]
 		},
@@ -18,7 +17,7 @@ module.exports = function(grunt) {
 		subgrunt: {
 			paella: {
 				projects: {
-					'submodules/paella': 'build.release'
+					'submodules/paella': 'build.debug'
 				}
 			}
 		},		
@@ -37,7 +36,6 @@ module.exports = function(grunt) {
 			}
 		},
 		
-		
 		concat: {
 			options: {
 				separator: '\n',
@@ -54,7 +52,12 @@ module.exports = function(grunt) {
 			},			
 			'paella_matterhorn.js': {
 				src: [
-					'paella-matterhorn/javascript/*.js',
+					'paella-matterhorn/javascript/01_prerequisites.js',
+					'paella-matterhorn/javascript/02_accesscontrol.js',
+					'paella-matterhorn/javascript/modified-classes/videoloader-for-paella41.js',
+					'paella-matterhorn/javascript/04_datadelegates.js',
+					'paella-matterhorn/javascript/05_initdelegate.js',
+					'paella-matterhorn/javascript/06_searchepisode.js',
 					'paella-matterhorn/plugins/*/*.js'
 				],
 				dest: 'build/javascript/paella_matterhorn.js'
@@ -187,12 +190,25 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-jsonlint');
 	grunt.loadNpmTasks('grunt-express');
-
+	grunt.loadNpmTasks('grunt-make');
 	
 	grunt.registerTask('default', ['build.release']);
-	grunt.registerTask('checksyntax', ['concat:less','less:production', 'jshint', 'jsonlint']);
+	grunt.registerTask('build_matterhorn_css', ['concat:less', 'less:production']);
+	grunt.registerTask('checksyntax', ['jshint', 'jsonlint']);
 	
-	grunt.registerTask('build.common', ['update_submodules', 'subgrunt:paella', 'checksyntax', 'copy:paella', 'concat:paella_matterhorn.js', 'merge-json']);
+	grunt.registerTask(
+		'build.common', 
+		[
+			'update_submodules',
+			'make:copy-extensions-to-paella',
+			'subgrunt:paella',
+			'copy:paella',
+			'checksyntax',
+			'build_matterhorn_css',
+			'concat:paella_matterhorn.js',
+			'merge-json'
+		]
+	);
 	
 	grunt.registerTask('build.release', ['build.common', 'cssmin:dist']);
 	grunt.registerTask('build.debug', ['build.common']);

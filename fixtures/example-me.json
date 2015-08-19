@@ -1,0 +1,42 @@
+{
+  "username": "anonymous",
+  "roles": [
+    "ROLE_ANONYMOUS"
+  ],
+  "org": {
+    "id": "mh_default_org",
+    "anonymousRole": "ROLE_ANONYMOUS",
+    "name": "Opencast Project",
+    "adminRole": "ROLE_ADMIN",
+    "properties": {
+      "trim.previous_frame": "left",
+      "logo_small": "/engage/ui/img/mh_logos/OpencastLogo.png",
+      "trim.delete_selected_segment": "delete",
+      "adminui.i18n_tab_users.enable": "false",
+      "logo_large": "/engage/ui/img/mh_logos/MatterhornLogo_large.png",
+      "trim.play_current_segment": "c",
+      "adminui.chunksize": "100000",
+      "trim.play_pause": "space",
+      "engageui.link_download.enable": "false",
+      "trim.set_current_time_as_outpoint": "o",
+      "adminui.i18n_tab_episode.enable": "true",
+      "trim.select_item_at_current_time": "y",
+      "engageui.links_media_module.enable": "true",
+      "engageui.link_mobile_redirect.description": "For more information have a look at the official site.",
+      "adminui.series_prepopulate.enable": "false",
+      "trim.next_frame": "right",
+      "org.opencastproject.admin.ui.url": "http://54.84.99.24",
+      "trim.next_marker": "down",
+      "org.opencastproject.engage.ui.url": "https://matterhorn.dce.harvard.edu",
+      "trim.play_current_pre_post": "shift+c",
+      "trim.previous_marker": "up",
+      "engageui.annotations.enable": "false",
+      "trim.set_current_time_as_inpoint": "i",
+      "trim.play_ending_of_current_segment": "n",
+      "engageui.link_mobile_redirect.url": "http://opencast.org/matterhorn/",
+      "login.display_defaults": "true",
+      "trim.split_at_current_time": "v",
+      "engageui.link_mobile_redirect.enable": "false"
+    }
+  }
+}

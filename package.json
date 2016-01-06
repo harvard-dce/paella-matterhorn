@@ -7,7 +7,7 @@
     "url": "https://github.com/harvard-dce/paella-matterhorn.git"
   },
   "dependencies": {
-    "dce-paella-extensions": "^1.0.21"
+    "dce-paella-extensions": "1.0.21"
   },
   "devDependencies": {
     "express": "^4.6.1",

@@ -38,17 +38,7 @@
 			    </configuration>
 
 			    <executions>
-                    <execution>
-                        <id>install node and npm</id>
-						<phase>validate</phase>                        
-                        <goals>
-                            <goal>install-node-and-npm</goal>
-                        </goals>
-                        <configuration>
-                            <nodeVersion>v0.10.26</nodeVersion>
-                            <npmVersion>1.4.3</npmVersion>
-                        </configuration>
-                    </execution>
+                      <!-- Do not install NPM via Eirslett. We need a modern NPM. Just use the system NPM. -->
 
                     <execution>
 						<phase>validate</phase>                        

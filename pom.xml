@@ -4,34 +4,29 @@
 	<artifactId>paella-matterhorn</artifactId>
 	<packaging>bundle</packaging>
 	<name>paella-matterhorn</name>
-	<version>4.0.0</version>
+	<version>5.0.15</version>
 	<parent>
 		<groupId>org.opencastproject</groupId>
 		<artifactId>base</artifactId>
 		<version>1.6.3</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
+	<prerequisites>
+		<maven>3.1</maven>
+	</prerequisites>
 	<properties>
+		<opencast.version>1.6.3</opencast.version>
+		<paella.version>${project.version}</paella.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<matterhorn.version>1.4.4</matterhorn.version>
-		<matterhorn.basedir>${project.basedir}/../..</matterhorn.basedir>
+                <matterhorn.basedir>${project.basedir}/../..</matterhorn.basedir>
 		<checkstyle.skip>false</checkstyle.skip>
 	</properties>
-	<dependencies>
-		<!--
-		<dependency>
-			<groupId>org.opencastproject</groupId>
-			<artifactId>matterhorn-search-service-api</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		-->
-	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 			    <groupId>com.github.eirslett</groupId>
 			    <artifactId>frontend-maven-plugin</artifactId>
-			    <version>0.0.22</version>
+			    <version>1.0</version>
 			    
 			    <configuration>
 			        <workingDirectory>.</workingDirectory>
@@ -40,40 +35,39 @@
 			    <executions>
                     <execution>
                         <id>install node and npm</id>
-			<phase>validate</phase>
+                        <phase>validate</phase>
                         <goals>
                             <goal>install-node-and-npm</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v0.12.1</nodeVersion>
-                            <npmVersion>2.7.1</npmVersion>
+                            <nodeVersion>v4.4.5</nodeVersion>
+                            <npmVersion>2.15.0</npmVersion>
                         </configuration>
                     </execution>
 
                     <execution>
-			<phase>validate</phase>
+                        <phase>validate</phase>
                         <id>npm install</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
-                        <!-- Optional configuration which provides for running any npm command -->
                         <configuration>
                             <arguments>install</arguments>
                         </configuration>
                     </execution>
 
                     <execution>
-			<phase>compile</phase>
-                        <id>grunt</id>
+                        <phase>compile</phase>
+                        <id>grunt build</id>
                         <goals>
                             <goal>grunt</goal>
                         </goals>
                         <configuration>
-                            <arguments></arguments>
+                            <arguments>build</arguments>
                         </configuration>
                     </execution>
 			    </executions>			    
-			</plugin>		
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -89,7 +83,7 @@
 							<outputDirectory>${basedir}/target/classes/ui/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/build</directory>
+									<directory>./build/dce-paella-opencast</directory>
 									<includes>
 										<include>**</include>
 									</includes>									
@@ -108,7 +102,7 @@
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName> ${project.artifactId} </Bundle-SymbolicName>
-						<Import-Package> org.opencastproject.rest;version=${matterhorn.version}</Import-Package>
+						<Import-Package> org.opencastproject.rest;version=${opencast.version}</Import-Package>
 						<Private-Package>ui.*</Private-Package>
 						<Http-Alias>/engage/player</Http-Alias>
 						<Http-Classpath>/ui</Http-Classpath>

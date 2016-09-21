@@ -58,7 +58,7 @@ var cannedHeartbeatFootprints = fs.readFileSync(
 );
 
 var cannedTimedContentsPage = fs.readFileSync(
-  __dirname + '/paella-matterhorn/ui/watch-timed-comments.html'
+  __dirname + '/fixtures/ui/watch-timed-comments.html'
 );
 
 var proxy = httpProxy.createProxyServer({

@@ -1,220 +1,172 @@
+/** DCE dce-paella-opencast-extenstions */
+/* v0.0.01 to build upv via this repo
+ */
+// TODO: v0.0.02 to build and insert dce-paella-extensions
+// TODO: v0.0.03 to build and inject the DCE auth for the 01_ js
+// TODO: v0.0.04 to build and inject the rest of the DCE matterhorn customizations
+
 var path = require('path');
 
-module.exports = function(grunt) { 
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
-		
-		clean: {
-			build: ["build"]
-		},
-		update_submodules: {
-	        default: {
-	            options: {
-	                // default command line parameters will be used: --init --recursive
-	            }
-	        }
-		},		
-		subgrunt: {
-			paella: {
-				projects: {
-					'submodules/paella': 'build.debug'
-				}
-			}
-		},		
-		copy: {
-			paella: {
-				files: [
-					// Basic Paella
-					{expand: true, cwd: 'submodules/paella/build/player', src: ['localization/**', 'config/**', 'javascript/**', 'resources/**', 'player.swf'], dest: 'build/'},			
-					{expand: true, cwd: 'submodules/paella/build/player', src: ['localization/**', 'config/**', 'javascript/**', 'resources/**', 'player_streaming.swf'], dest: 'build/'},			
-					// Paella Matterhorn
-					{expand: true, cwd: 'paella-matterhorn/ui', src: ['**'], dest: 'build/'},
-					{expand: true, src:'plugins/*/resources/**', dest: 'build/resources/style/',
-						rename: function (dest, src) { return dest+src.split('/').splice(3).join('/'); }
-					}					
-				]
-			}
-		},
-		
-		concat: {
-			options: {
-				separator: '\n',
-				process: function(src, filepath) {
-					return '/*** File: ' + filepath + ' ***/\n' + src;
-				}
-			},
-			'less':{
-				src: [
-					'paella-matterhorn/plugins/*/*.less',
-					'submodules/paella/resources/style/defines.less',
-					'node_modules/dce-paella-extensions/resources/style/overrides.less'
-				],
-				dest: 'build/temp/matterhorn-style.less'
-			},			
-			'paella_matterhorn.js': {
-				src: [
-					'paella-matterhorn/javascript/01_prerequisites.js',
-					'paella-matterhorn/javascript/02_accesscontrol.js',
-					'paella-matterhorn/javascript/modified-classes/videoloader-for-paella41.js',
-					'paella-matterhorn/javascript/04_datadelegates.js',
-					'paella-matterhorn/javascript/05_initdelegate.js',
-					'paella-matterhorn/javascript/06_searchepisode.js',
-					'paella-matterhorn/plugins/*/*.js'
-				],
-				dest: 'build/javascript/paella_matterhorn.js'
-			}
-		},
-		
-		uglify: {
-			options: {
-				banner: '/*\n' +
-						'	Paella HTML 5 Multistream Player for Matterhorn\n' +
-						'	Copyright (C) 2013  Universitat Politècnica de València' +
-						'\n'+
-						'	File generated at <%= grunt.template.today("dd-mm-yyyy") %>\n' +
-						'*/\n',
-				mangle: false
-			},
-			dist: {
-				files: {
-					'build/javascript/paella_matterhorn.js': ['build/javascript/paella_matterhorn.js']
-				}
-			}
-		},
-		jshint: {
-			options: {
-				jshintrc: '.jshintrc'
-			},
-			dist: [
-				'paella-matterhorn/javascript/*.js',
-				'paella-matterhorn/plugins/*/*.js'
-			]
-		},
-		less: {
-			development: {
-				options: {
-					paths: [ "css" ]
-				},
-				modifyVars: {
-					titleColor: '#AAAAFF'
-				},
-				files:{
-					"build/resources/style/matterhorn-style.css": "build/temp/matterhorn-style.less"
-				}
-			},
-			production: {
-				options:{
-					paths: [ "css" ]
-				},
-				modifyVars: {
-					titleColor: '#FF0000'
-				},
-				files:{
-					"build/resources/style/matterhorn-style.css": "build/temp/matterhorn-style.less"
-				}
-			}
-		},		
-		cssmin: {
-			dist: {
-				files: {
-					'build/resources/style/matterhorn-style.css': ['build/resources/style/matterhorn-style.css']
-				}
-			}
-		},
-		jsonlint: {
-			paella: {
-				src: [	'package.json',
-						'paella-matterhorn/ui/config/*.json',
-						'paella-matterhorn/plugins/*/localization/*.json',
-						'paella-matterhorn/localization/*.json'
-				]
-			}
-		},
-		
-		'merge-json': {
-			'i18n': {
-				files: {
-					'build/localization/paella_en.json': [
-						'build/localization/paella_en.json',
-						'paella-matterhorn/localization/*en.json',
-						'paella-matterhorn/plugins/*/localization/*en.json' 
-					],
-					'build/localization/paella_es.json': [
-						'build/localization/paella_es.json',
-						'paella-matterhorn/localization/*es.json', 
-						'paella-matterhorn/plugins/*/localization/*es.json' 
-					]
-				}
-			}
-		},
-				
-		watch: {
-			 debug: {
-				 files: [
-				 	'paella-matterhorn/ui/**',
-				 	'paella-matterhorn/javascript/*.js',
-				 	'paella-matterhorn/plugins/**'
-				 ],
-				 tasks: ['build.debug']
-			},
-			release: {
-				 files: [
-				 	'paella-matterhorn/ui/**',
-				 	'paella-matterhorn/javascript/*.js',
-				 	'paella-matterhorn/plugins/**'
-				 ],
-				 tasks: ['build.release']
-			}
-		},		
-		express: {
-			dist: {
-		      options: {
-			      port:3000,
-			      bases: 'build',
-			      server: path.resolve('./server')
-		      }
-		  }
-		}
-	});
-
-	grunt.loadNpmTasks('grunt-merge-json');
-	grunt.loadNpmTasks('grunt-update-submodules');
-	grunt.loadNpmTasks('grunt-subgrunt');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-jsonlint');
-	grunt.loadNpmTasks('grunt-express');
-	grunt.loadNpmTasks('grunt-make');
-	
-	grunt.registerTask('default', ['build.debug']);
-	grunt.registerTask('build_matterhorn_css', ['concat:less', 'less:production']);
-	grunt.registerTask('checksyntax', ['jshint', 'jsonlint']);
-	
-	grunt.registerTask(
-		'build.common', 
-		[
-			'update_submodules',
-			'make:copy-extensions-to-paella',
-			'subgrunt:paella',
-			'copy:paella',
-			'checksyntax',
-			'build_matterhorn_css',
-			'concat:paella_matterhorn.js',
-			'make:build-app-index',
-			'merge-json'
-		]
-	);
-	
-	grunt.registerTask('build.release', ['build.common', 'cssmin:dist']);
-	grunt.registerTask('build.debug', ['build.common']);
-	
-	grunt.registerTask('server.release', ['build.release', 'express', 'watch:release']);		
-	grunt.registerTask('server.debug', ['build.debug', 'express', 'watch:debug']);		
+module.exports = function (grunt) {
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        
+        clean: {
+            options: {
+                force: true
+            },
+            build:[ "build"]
+        },
+        copy: {
+            "upv-paella-opencast": {
+                files:[ {
+                    // Basic Paella-Opencast
+                    expand: true, dot: true, cwd: 'node_modules/paella-engage-ui', src:[ '**', '!paella-opencast/plugins/es.upv.paella.opencast.loader/01_prerequisites.js'], dest: 'build/upv-paella-opencast'
+                },
+                {
+                    // copy in DCE Paella-Extension plugins (DCE plugins are added to opencast-paella plugins here instead of to paella plugins as before. All plugins end up in the same file when built by upv's paella-opencast)
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
+                },
+                {
+                    // The DCE auth file replaces the UPV default auth
+                    expand: true, cwd: 'vendor/plugins/es.upv.paella.opencast.loader-DCE', src:[ '01_prerequisites_DCE.js'], dest: 'build/upv-paella-opencast/paella-opencast/plugins/es.upv.paella.opencast.loader'
+                },
+                {
+                    // copy in DCE Paella-Opencast customized plugins
+                    expand: true, cwd: 'vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
+                }]
+            },
+            "dce-paella-opencast": {
+                files:[ {
+                    // Basic Paella-Matterhorn
+                    // copy all except the files we are relacing
+                    expand: true, cwd: 'build/upv-paella-opencast/build/paella-opencast', src:[ '**', '!watch.html'], dest: 'build/dce-paella-opencast'
+                }, {
+                    // copy in the DCE paella-opencast customized files
+                    expand: true, cwd: 'vendor/ui', src:[ '**'], dest: 'build/dce-paella-opencast'
+                }, {
+                    // copy in the DCE paella-extension resources
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/resources', src:[ '**'], dest: 'build/dce-paella-opencast/resources'
+                },
+                {
+                    // Use HUDCE specific config to determine defaults and plugins to enable
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/config', src:[ 'config.json'], dest: 'build/dce-paella-opencast/config'
+                },
+                {
+                    // The CS50 look and feel
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/skins', src:[ '**'], dest: 'build/dce-paella-opencast/resources/style'
+                },
+                {
+                    // The jquery-ui and help page resources
+                    expand: true, dot: true, cwd: 'vendor/mh_dce_resources', src:[ '**'], dest: 'build/dce-paella-opencast/mh_dce_resources'
+                }]
+            }
+        },
+        subgrunt: {
+            "build.debug": {
+                projects: {
+                    'build/upv-paella-opencast': 'build'
+                }
+            },
+            checksyntax: {
+                projects: {
+                    'build/upv-paella-opencast': 'checksyntax'
+                }
+            }
+        },
+        jshint: {
+            options: {
+                jshintrc: 'node_modules/paella-engage-ui/.jshintrc'
+            },
+            dist:[
+            'dce-paella-opencast/javascript/*.js',
+            'dce-paella-opencast/plugins/*/*.js']
+        },
+        concat: {
+            options: {
+                separator: '\n',
+                process: function (src, filepath) {
+                    return '/*** File: ' + filepath + ' ***/\n' + src;
+                }
+            },
+            'less': {
+                src:[
+                'node_modules/dce-paella-extensions/vendor/skins/cs50.less',
+                'node_modules/dce-paella-extensions/resources/style/overrides.less'],
+                dest: 'build/temp/dce-matterhorn-style.less'
+            }
+        },
+        less: {
+            development: {
+                options: {
+                    paths:[ "css"]
+                },
+                modifyVars: {
+                    titleColor: '#AAAAFF'
+                },
+                files: {
+                    "build/dce-paella-opencast/resources/style/dce-matterhorn-style.css": "build/temp/dce-matterhorn-style.less"
+                }
+            },
+            production: {
+                options: {
+                    paths:[ "css"]
+                },
+                modifyVars: {
+                    titleColor: '#FF0000'
+                },
+                files: {
+                    "build/dce-paella-opencast/resources/style/dce-matterhorn-style.css": "build/temp/dce-matterhorn-style.less"
+                }
+            }
+        },
+        browserify: {
+            dist: {
+                files: {
+                    'build/dce-paella-opencast/javascript/app-index.js':[ 'app-src/index.js']
+                }
+            }
+        },
+        watch: {
+            debug: {
+                files:[
+                'dce-paella-opencast/ui/**',
+                'dce-paella-opencast/javascript/*.js',
+                'dce-paella-opencast/plugins/**'],
+                tasks:[ 'build']
+            }
+        },
+        express: {
+            dist: {
+                options: {
+                    port: 3000,
+                    server: path.resolve('./server')
+                }
+            }
+        }
+    });
+    
+    grunt.loadNpmTasks('grunt-subgrunt');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    //grunt.loadNpmTasks('grunt-merge-json');
+    grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-browserify');
+    //grunt.loadNpmTasks('grunt-make');
+    
+    grunt.registerTask('default',[ 'build']);
+    grunt.registerTask('dce-browserify',[ 'browserify']);
+    grunt.registerTask('build_dce_css',[ 'concat:less', 'less:production']);
+    grunt.registerTask('prepare',[ 'copy:upv-paella-opencast']);
+    grunt.registerTask('checksyntax',[ 'prepare', 'jshint', 'subgrunt:checksyntax']);
+    grunt.registerTask('build',[ 'prepare', 'subgrunt:build.debug', 'copy:dce-paella-opencast', 'build_dce_css', 'dce-browserify']);
+    grunt.registerTask('server',[ 'build', 'express', 'watch']);
 };

@@ -23,12 +23,10 @@ The OpsWorks build will run Maven (`mvn` ), which reads the `pom.xml` which tell
 
 Among other things, it:
 
-- Copies files from the `dce-paella-extensions` module into `submodules/paella` and various other places (see the [Makefile](https://github.com/harvard-dce/paella-matterhorn/blob/using-upstream-paella-directly/Makefile) for details).
-- Copies files from `submodules/paella` into `build`. The paella submodule is the [upstream paella](https://github.com/polimediaupv/paella), not a fork.
-- Also copies files from `paella-matterhorn/ui` into `build`.
+- Copies files from the `dce-paella-extensions` module into `node_modules/upv-paella-opencast` and various other places (see the [Gruntfile] for details).
+- Copies files from `build/upv-paella-opencast` into `build/dce-paella-opencast`.
+- Also copies files from `vendor/...` into `build`.
 - Concatenates the .less files together.
-- Concatenates the files from `paella-matterhorn/javascript` and `paella-matterhorn/plugins` into `paella_matterhorn.js`.
-- Concatenates localization json files together.
 
 *How to read the Makefile*
 
@@ -37,23 +35,12 @@ Among other things, it:
 1. Unix commands
 2. Dependencies (other targets)
 
-For example, the `copy-extensions-to-paella` target does nothing itself but depends on five other targets, like `copy-vendor-extensions-to-paella`. `copy-vendor-extensions-to-paella` creates a `vendor` directory under the Paella submodule directory if it doesn't exist and copies files from `dce-paella-extensions` into it.
-
-    copy-extensions-to-paella: \
-      copy-vendor-extensions-to-paella \
-      copy-resources-to-paella \
-      copy-test-repository-to-paella \
-      copy-config-to-paella \
-      copy-skins-to-paella
-
-    copy-vendor-extensions-to-paella:
-      mkdir -p $(PAELLADIR)/vendor && \
-      cp -r $(EXTDIR)/vendor/* $(PAELLADIR)/vendor
-
 Dependencies
 ------------
 
 dce-paella-extensions is a dependency that contains DCE-specific Paella changes.
+paella-engage-ui (polimediaupv/paella-matterhorn.git#...) is a dependency that contains Polimedia UPV Paella Opencast code.
+browserify supports building the DCE app-src extensions from this repository (extra features, such as routing)
 
 This project uses [NPM Shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap). It installs modules from the `npm-shrinkwrap.json` file, not the `package.json` file and will install the exact versions of the dependencies and subdependencies defined in `npm-shrinkwrap.json`. If you want to update dependencies, you must run `npm install --save <module name>@<version>` in order to update both `package.json` and `npm-shrinkwrap.json`. (`<module name>`  is the name of the dependency module you want to update. For example, dce-paella-extensions.)
 

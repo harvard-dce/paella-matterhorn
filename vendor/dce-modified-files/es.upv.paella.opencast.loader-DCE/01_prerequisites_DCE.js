@@ -168,10 +168,10 @@ paella.opencast = new (Class ({
             }
         }
         if (offeringId && type) {
-            paella.matterhorn.resourceId = (offeringId.length >= 11 ? "/" + offeringId.substring(0, 4) +
+            paella.opencast.resourceId = (offeringId.length >= 11 ? "/" + offeringId.substring(0, 4) +
             "/" + offeringId.substring(4, 6) + "/" + offeringId.substring(6, 11) + "/": "") + type;
         } else {
-            paella.matterhorn.resourceId = "";
+            paella.opencast.resourceId = "";
         }
     },
     // #DCE(greg): end of usertracking param set helper

@@ -93,7 +93,7 @@ module.exports = function (grunt) {
                 src:[
                 'node_modules/dce-paella-extensions/vendor/skins/cs50.less',
                 'node_modules/dce-paella-extensions/resources/style/overrides.less'],
-                dest: 'build/temp/dce-matterhorn-style.less'
+                dest: 'build/temp/style_cs50.less'
             }
         },
         less: {
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
                     titleColor: '#FF0000'
                 },
                 files: {
-                    "build/dce-paella-opencast/resources/style/dce-matterhorn-style.css": "build/temp/dce-matterhorn-style.less"
+                    "build/dce-paella-opencast/resources/style/style_cs50.css": "build/temp/style_cs50.less"
                 }
             }
         },

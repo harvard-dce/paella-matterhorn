@@ -28,11 +28,11 @@ module.exports = function (grunt) {
                     expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
                 },
                 {
-                    // The DCE auth file replaces the UPV default auth
-                    expand: true, cwd: 'vendor/plugins/es.upv.paella.opencast.loader-DCE', src:[ '01_prerequisites_DCE.js'], dest: 'build/upv-paella-opencast/paella-opencast/plugins/es.upv.paella.opencast.loader'
+                    // copy file inserts, The DCE auth file replaces the UPV default auth
+                    expand: true, cwd: 'vendor/dce-modified-files/es.upv.paella.opencast.loader-DCE', src:[ '01_prerequisites_DCE.js'], dest: 'build/upv-paella-opencast/paella-opencast/plugins/es.upv.paella.opencast.loader'
                 },
                 {
-                    // copy in DCE Paella-Opencast customized plugins
+                    // copy DCE paella-opencast plugins (the other dce-paella-extension plugins are copied after UPV paella-matterhorn builds its sub paella player)
                     expand: true, cwd: 'vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
                 }]
             },

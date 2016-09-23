@@ -59,6 +59,12 @@ To play a video in the test server, take a URL from production (matterhorn.dce.h
 
 If you want to run it under http instead of https, you can run the test server with `node test-server.js --use-http`.
 
+To avoid having to run `npm publish` and `npm install` in the dce-paella-extensions local repo, just to see if a change worked in the context of paella-matterhorn, you can:
+
+- From your local dce-paella-extensions project directory, Run `npm link` (with sudo if your global node_modules is in a place that requires it).
+- Run `npm link dce-paella-extensions` in this directory. Now there will be a symlink-like link to your local dce-paella-extensions project.
+- Then, run `grunt build.debug` in this directory to rebuild the project.
+
 Tests
 -----
 

@@ -52,7 +52,7 @@
 
                     <execution>
                         <phase>compile</phase>
-                        <id>grunt build</id>
+                        <id>grunt</id>
                         <goals>
                             <goal>grunt</goal>
                         </goals>

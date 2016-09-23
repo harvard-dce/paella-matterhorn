@@ -57,10 +57,6 @@ var cannedHeartbeatFootprints = fs.readFileSync(
   __dirname + '/fixtures/example-paella-footprint.json'
 );
 
-var cannedTimedContentsPage = fs.readFileSync(
-  __dirname + '/fixtures/ui/watch-timed-comments.html'
-);
-
 var proxy = httpProxy.createProxyServer({
   secure: false
 });
@@ -99,15 +95,12 @@ router.get('/usertracking/*', swallow);
 // // Quitely consume the footprint puts
 router.get('/footprint/*', swallow);
 
-// timed comments window
-router.get('/watch-timed-comments.html*', timedContentsPage);
-
 // Handle everything else with the proxy back to the Matterhorn server.
 router.get('/*', passToProxy);
 
 // Serve /engage/player/* requests from the local build folder.
-app.use('/engage/player', express.static('build'));
-app.use('/engage/player', express.static('build/resources'));
+app.use('/engage/player', express.static('build/dce-paella-opencast'));
+app.use('/engage/player', express.static('build/dce-paella-opencast/resources'));
 app.use('/', router);
 
 
@@ -143,13 +136,6 @@ function captions(req, res) {
   log('Serving captions.');
   res.header('Content-Type', 'text/xml');
   res.end(cannedCaptions);
-}
-
-function timedContentsPage(req, res) {
-  log('Serving contentsPage.');
-  res.header('Content-Type', 'text/html');
-  res.end(cannedTimedContentsPage);
-
 }
 
 function footprint(req, res) {

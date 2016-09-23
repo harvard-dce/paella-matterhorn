@@ -39,7 +39,7 @@ run-test-server-plain-http:
 
 # TODO: uglify-js, source map build.
 build-app-index:
-	$(BROWSERIFYCMD) app-src/index.js > build/javascript/app-index.js
+#	$(BROWSERIFYCMD) app-src/index.js > build/javascript/app-index.js
 
 
 SMOKECHROME = node_modules/.bin/tap-closer | \

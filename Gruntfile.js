@@ -18,43 +18,46 @@ module.exports = function (grunt) {
             build:[ "build"]
         },
         copy: {
-            "upv-paella-opencast": {
-                files:[ {
+              "copy-upv-opencast": {
+               files:[
+                {
                     // Basic Paella-Opencast
                     expand: true, dot: true, cwd: 'node_modules/paella-engage-ui', src:[ '**', '!paella-opencast/plugins/es.upv.paella.opencast.loader/01_prerequisites.js'], dest: 'build/upv-paella-opencast'
-                },
-                {
-                    // copy in DCE Paella-Extension plugins (DCE plugins are added to opencast-paella plugins here instead of to paella plugins as before. All plugins end up in the same file when built by upv's paella-opencast)
-                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
-                },
+                }],
+             },
+            "pre-copy-dce-customizations": {
+                files:[
                 {
                     // copy file inserts, The DCE auth file replaces the UPV default auth
                     expand: true, cwd: 'vendor/dce-modified-files/es.upv.paella.opencast.loader-DCE', src:[ '01_prerequisites_DCE.js'], dest: 'build/upv-paella-opencast/paella-opencast/plugins/es.upv.paella.opencast.loader'
+                },{
+                    // Basic Paella-Opencast
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
                 },
                 {
-                    // copy DCE paella-opencast plugins (the other dce-paella-extension plugins are copied after UPV paella-matterhorn builds its sub paella player)
-                    expand: true, cwd: 'vendor/plugins', src:[ '**'], dest: 'build/upv-paella-opencast/paella-opencast/plugins'
+                    // Basic Paella-Opencast
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/resources/images', src:[ 'paella_icons_light_dce.png'], dest: 'build/upv-paella-opencast/node_modules/PaellaPlayer/resources/images/'
+                },
+                {
+                    // Basic Paella-Opencast
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/skins', src:[ '**'], dest: 'build/upv-paella-opencast/node_modules/PaellaPlayer/resources/style/skins'
                 }]
             },
-            "dce-paella-opencast": {
+            "post-copy-dce-customizations": {
                 files:[ {
                     // Basic Paella-Matterhorn
                     // copy all except the files we are relacing
                     expand: true, cwd: 'build/upv-paella-opencast/build/paella-opencast', src:[ '**', '!watch.html'], dest: 'build/dce-paella-opencast'
                 }, {
-                    // copy in the DCE paella-opencast customized files
+                    // copy in the DCE paella-opencast customized UI files
                     expand: true, cwd: 'vendor/ui', src:[ '**'], dest: 'build/dce-paella-opencast'
                 }, {
                     // copy in the DCE paella-extension resources
-                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/resources', src:[ '**'], dest: 'build/dce-paella-opencast/resources'
+                    //expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/resources', src:[ '**'], dest: 'build/dce-paella-opencast/resources'
                 },
                 {
                     // Use HUDCE specific config to determine defaults and plugins to enable
                     expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/config', src:[ 'config.json'], dest: 'build/dce-paella-opencast/config'
-                },
-                {
-                    // The CS50 look and feel
-                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/vendor/skins', src:[ '**'], dest: 'build/dce-paella-opencast/resources/style'
                 },
                 {
                     // The jquery-ui and help page resources
@@ -67,20 +70,7 @@ module.exports = function (grunt) {
                 projects: {
                     'build/upv-paella-opencast': 'build'
                 }
-            },
-            checksyntax: {
-                projects: {
-                    'build/upv-paella-opencast': 'checksyntax'
-                }
             }
-        },
-        jshint: {
-            options: {
-                jshintrc: 'node_modules/paella-engage-ui/.jshintrc'
-            },
-            dist:[
-            'dce-paella-opencast/javascript/*.js',
-            'dce-paella-opencast/plugins/*/*.js']
         },
         concat: {
             options: {
@@ -105,7 +95,7 @@ module.exports = function (grunt) {
                     titleColor: '#AAAAFF'
                 },
                 files: {
-                    "build/dce-paella-opencast/resources/style/dce-matterhorn-style.css": "build/temp/dce-matterhorn-style.less"
+                    "build/dce-paella-opencast/resources/style/style_cs50.css": "build/temp/style_cs50.less"
                 }
             },
             production: {
@@ -130,9 +120,9 @@ module.exports = function (grunt) {
         watch: {
             debug: {
                 files:[
-                'dce-paella-opencast/ui/**',
-                'dce-paella-opencast/javascript/*.js',
-                'dce-paella-opencast/plugins/**'],
+                'vendor/ui/**',
+                'vendor/dce-modified-files/*.js',
+                'vendor/plugins/**'],
                 tasks:[ 'build']
             }
         },
@@ -165,8 +155,8 @@ module.exports = function (grunt) {
     grunt.registerTask('default',[ 'build']);
     grunt.registerTask('dce-browserify',[ 'browserify']);
     grunt.registerTask('build_dce_css',[ 'concat:less', 'less:production']);
-    grunt.registerTask('prepare',[ 'copy:upv-paella-opencast']);
+    grunt.registerTask('prepare',[ 'copy:copy-upv-opencast', 'copy:pre-copy-dce-customizations']);
     grunt.registerTask('checksyntax',[ 'prepare', 'jshint', 'subgrunt:checksyntax']);
-    grunt.registerTask('build',[ 'prepare', 'subgrunt:build.debug', 'copy:dce-paella-opencast', 'build_dce_css', 'dce-browserify']);
+    grunt.registerTask('build',[ 'prepare','subgrunt:build.debug', 'copy:post-copy-dce-customizations', 'build_dce_css', 'dce-browserify']);
     grunt.registerTask('server',[ 'build', 'express', 'watch']);
 };

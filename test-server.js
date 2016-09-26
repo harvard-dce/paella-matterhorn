@@ -83,6 +83,9 @@ router.get('/annotation/annotations.json*', annotations);
 // Serve a canned episode after an annotation new comment update/write 
 router.put('/annotation/', annotations);
 
+// Serve a canned canAnnotate response
+router.get('/annotation/canAnnotate*', canannotate);
+
 // Serve a canned episode after an annotation reply update/write 
 router.put('/annotation/[0-9]*', annotations);
 
@@ -142,6 +145,12 @@ function footprint(req, res) {
    log('Serving footprints.');
   res.header('Content-Type', 'application/json');
   res.end(cannedHeartbeatFootprints);
+}
+
+function canannotate(req, res) {
+  log('Serving canned yes for canAnnotate.');
+  res.header('Content-Type', 'text/plain');
+  res.end("true");
 }
 
 function annotations(req, res) {

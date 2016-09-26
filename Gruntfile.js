@@ -56,8 +56,8 @@ module.exports = function (grunt) {
                     //expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/resources', src:[ '**'], dest: 'build/dce-paella-opencast/resources'
                 },
                 {
-                    // Use HUDCE specific config to determine defaults and plugins to enable
-                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/config', src:[ 'config.json'], dest: 'build/dce-paella-opencast/config'
+                    // Use HUDCE specific config, profiles, default resources. Replace all UPV config contents.
+                    expand: true, dot: true, cwd: 'node_modules/dce-paella-extensions/config', src:[ '**'], dest: 'build/dce-paella-opencast/config'
                 },
                 {
                     // The jquery-ui and help page resources

@@ -13,16 +13,12 @@ Branches and tags
 
 Building
 --------
+- Run `mvn clean install`
 
-Prerequisites:
-
-- Run `npm install`.
-- Run `npm install -g grunt-cli` or `sudo npm install -g grunt-cli` if you cannot write to your global node_modules directory.
-
-The OpsWorks build will run Maven (`mvn` ), which reads the `pom.xml` which tells it to run `grunt` to build everything. (For local development, you can just install Grunt yourself and  run `grunt` .)  `server.debug` is the default Grunt target because we do not currently minify for production.
+The OpsWorks runs Maven (`mvn` ), which reads the `pom.xml` which tells it to install node and run `grunt` to build everything. (For local development, you can just install Grunt yourself and  run `grunt` .)  `server.debug` is the default Grunt target because we do not currently minify for production.
 
 Among other things, it:
-
+- installs a local version of node if it is not found globally
 - Copies files from the `dce-paella-extensions` module into `node_modules/upv-paella-opencast` and various other places (see the [Gruntfile] for details).
 - Copies files from `build/upv-paella-opencast` into `build/dce-paella-opencast`.
 - Also copies files from `vendor/...` into `build`.
@@ -46,12 +42,19 @@ This project uses [NPM Shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap). It in
 
 [player-router](https://github.com/harvard-dce/player-router) handles URL hash-based routing. app-src/index.js is the module within paella-matterhorn that handles webapp functionality external to Paella.
 
-Running locally
+Running locally (Development)
 ---------------
+Globally install Grunt and Jshinit:
+- Run `npm install -g grunt-cli jshint` or `sudo npm install -g grunt-cli jshint` if you cannot write to your global node_modules directory.
+
+Locally install the project dependencies:
+- Run `npm install`
+
+Build the files:
+- Run `grunt build.debug`
 
 If you want to run paella-matterhorn locally without deploying it as a jar within matterhorn (and matterhorn.dce.harvard.edu is currently OK), run:
-
-    make run-test-server
+- Run `make run-test-server`
 
 This will create a server that will serve local copies of files under `build/` and will serve a canned `episode.json` and `me.json`, but will proxy everything else (like series information) to matterhorn.dce.harvard.edu.
 

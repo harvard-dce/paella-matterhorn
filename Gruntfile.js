@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 {
                     // Basic Paella-Opencast
                     expand: true, dot: true, cwd: 'node_modules/paella-engage-ui', src:[ '**', '!paella-opencast/plugins/es.upv.paella.opencast.loader/01_prerequisites.js'], dest: 'build/upv-paella-opencast'
-                }],
+                }]
              },
             "pre-copy-dce-customizations": {
                 files:[
@@ -67,6 +67,9 @@ module.exports = function (grunt) {
         },
         subgrunt: {
             "build.debug": {
+                options: {
+                  "npmInstall": false
+                },
                 projects: {
                     'build/upv-paella-opencast': 'build'
                 }
@@ -83,7 +86,7 @@ module.exports = function (grunt) {
                 src:[
                 'node_modules/dce-paella-extensions/vendor/skins/cs50.less',
                 'node_modules/dce-paella-extensions/resources/style/overrides.less'],
-                dest: 'build/temp/style_cs50.less'
+                dest: 'build/temp/opencast_cs50.less'
             }
         },
         less: {
@@ -95,7 +98,7 @@ module.exports = function (grunt) {
                     titleColor: '#AAAAFF'
                 },
                 files: {
-                    "build/dce-paella-opencast/resources/style/style_cs50.css": "build/temp/style_cs50.less"
+                    "build/dce-paella-opencast/resources/style/opencast_cs50.css": "build/temp/opencast_cs50.less"
                 }
             },
             production: {
@@ -106,7 +109,7 @@ module.exports = function (grunt) {
                     titleColor: '#FF0000'
                 },
                 files: {
-                    "build/dce-paella-opencast/resources/style/style_cs50.css": "build/temp/style_cs50.less"
+                    "build/dce-paella-opencast/resources/style/opencast_cs50.css": "build/temp/opencast_cs50.less"
                 }
             }
         },

@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "browserify": "^12.0.1",
-    "dce-paella-extensions": "^1.4.4",
+    "dce-paella-extensions": "^1.4.5",
     "paella-engage-ui": "polimediaupv/paella-matterhorn.git#5.0.15",
     "object-path-exists": "^1.0.0"
   },

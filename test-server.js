@@ -150,7 +150,7 @@ function footprint(req, res) {
 function canannotate(req, res) {
   log('Serving canned yes for canAnnotate.');
   res.header('Content-Type', 'text/plain');
-  res.end("true");
+  res.end("false");
 }
 
 function annotations(req, res) {

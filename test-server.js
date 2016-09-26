@@ -5,14 +5,15 @@ var http = require('http');
 var fs = require('fs');
 var jsonfile = require('jsonfile');
 
-var useHTTPS = true;
+var useHTTPS = false;
 var verbose = true;
 
 if (process.argv.length > 2 && process.argv[2] === '--use-http') {
   useHTTPS = false;
 }
 
-var matterhornProxyURL = 'https://matterhorn.dce.harvard.edu/';
+//var matterhornProxyURL = 'https://matterhorn.dce.harvard.edu/';
+var matterhornProxyURL = 'http://10.10.10.50/';
 var proxyOpts = {
   target: matterhornProxyURL
 };

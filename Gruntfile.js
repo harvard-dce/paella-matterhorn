@@ -71,7 +71,8 @@ module.exports = function (grunt) {
                   "npmInstall": true
                 },
                 projects: {
-                    'node_modules/paella-engage-ui': 'build'
+                    // This is just to get the dependencies built under UPV. jshint is the least intensive process target
+                    'node_modules/paella-engage-ui': 'jshint'
                 }
             },
             "build.debug": {

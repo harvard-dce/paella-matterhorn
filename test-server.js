@@ -14,6 +14,7 @@ if (process.argv.length > 2 && process.argv[2] === '--use-http') {
 
 //var matterhornProxyURL = 'https://matterhorn.dce.harvard.edu/';
 var matterhornProxyURL = 'http://10.10.10.50/';
+//var matterhornProxyURL = 'http://matterhorn.dev-kdolan.dcex.harvard.edu';
 var proxyOpts = {
   target: matterhornProxyURL
 };
@@ -95,6 +96,7 @@ router.get('/usertracking/footprint.json*', footprint);
 
 // // Quitely consume the usertracking puts
 router.get('/usertracking/*', swallow);
+router.put('/usertracking/*', swallow);
 
 // // Quitely consume the footprint puts
 router.get('/footprint/*', swallow);
@@ -103,8 +105,8 @@ router.get('/footprint/*', swallow);
 router.get('/*', passToProxy);
 
 // Serve /engage/player/* requests from the local build folder.
-app.use('/engage/player', express.static('build/dce-paella-opencast'));
-app.use('/engage/player', express.static('build/dce-paella-opencast/resources'));
+app.use('/engage/player', express.static('build/paella-opencast'));
+app.use('/engage/player', express.static('build/paella-opencast/resources'));
 app.use('/', router);
 
 
@@ -151,7 +153,7 @@ function footprint(req, res) {
 function canannotate(req, res) {
   log('Serving canned yes for canAnnotate.');
   res.header('Content-Type', 'text/plain');
-  res.end("false");
+  res.end("true");
 }
 
 function annotations(req, res) {

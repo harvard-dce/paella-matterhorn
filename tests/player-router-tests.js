@@ -72,7 +72,7 @@ var negativeCases = [
   },
   {
     seekParamName: 'range',
-    hashLocation: 'range=abcd20',
+    hashLocation: 'range=abcd20'
   }
 ];
 
@@ -118,7 +118,7 @@ function runPositiveCaseTest(testCase) {
         endTime,
         testCase.expectedEnd,
         'Correct end is passed to responder.'
-      )
+      );
       t.end();
     }
   });

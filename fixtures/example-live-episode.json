@@ -1,0 +1,95 @@
+{
+  "search-results": {
+    "searchTime": "1",
+    "total": "1",
+    "limit": "1",
+    "offset": "0",
+    "query": "(id:ed5514d1\\-8b95\\-418d\\-a814\\-4807428e4c18) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:Series AND -oc_deleted:[* TO *]",
+    "result": {
+      "org": "mh_default_org",
+      "id": "ed5514d1-8b95-418d-a814-4807428e4c18",
+      "mediapackage": {
+        "start": "2015-07-22T15:59:00Z",
+        "id": "ed5514d1-8b95-418d-a814-4807428e4c18",
+        "duration": "11520000",
+        "title": "Lecture 10",
+        "series": 20150333383,
+        "seriestitle": "The Economics of Business",
+        "creators": {
+          "creator": "Robert E. Wayland"
+        },
+        "contributors": {
+          "contributor": "danj"
+        },
+        "media": {
+          "track": [
+            {
+              "type": "presenter/delivery",
+              "id": "6be9bcaf-785e-49f9-bae6-03de80423b80",
+              "mimetype": "video/x-flv",
+              "tags": "",
+              "url": "rtmp://cp398121.live.edgefcs.net/live/da42901f-e335-4f80-908d-081e04dd8798-presenter-delivery.stream-1920x540_1_200@345252",
+              "duration": 3600000,
+              "video": {
+                "id": "video-presenter-delivery",
+                "device": "",
+                "encoder": "",
+                "resolution": "1920x540"
+              },
+              "live": true
+            },
+            {
+              "type": "presenter/delivery",
+              "id": "b3535841-7c25-4bf1-adbc-746d98db875d",
+              "mimetype": "video/x-flv",
+              "tags": "",
+              "url": "rtmp://cp398121.live.edgefcs.net/live/da42901f-e335-4f80-908d-081e04dd8798-presenter-delivery.stream-960x270_1_200@345252",
+              "duration": 3600000,
+              "video": {
+                "id": "video-presenter-delivery",
+                "device": "",
+                "encoder": "",
+                "resolution": "960x270"
+              },
+              "live": true
+            }
+          ]
+        },
+        "metadata": {
+          "catalog": [
+            {
+              "type": "dublincore/episode",
+              "id": "7b982f6b-a77e-4712-aaf7-95ca865674f9",
+              "mimetype": "text/xml",
+              "tags": "",
+              "url": "https://da4w749qm6awt.cloudfront.net/live/ed5514d1-8b95-418d-a814-4807428e4c18/1ed9e753-c3fd-4c4d-a034-69e608366695/dublincore.xml"
+            },
+            {
+              "type": "dublincore/series",
+              "id": "454956d5-180b-4360-a170-ab198ac2e125",
+              "mimetype": "text/xml",
+              "tags": "",
+              "url": "https://da4w749qm6awt.cloudfront.net/live/ed5514d1-8b95-418d-a814-4807428e4c18/54384b6a-b340-434b-bbc3-1bfa3ed50655/dublincore.xml"
+            }
+          ]
+        },
+        "attachments": "",
+        "publications": ""
+      },
+      "dcExtent": -1,
+      "dcTitle": "Lecture 10",
+      "dcCreator": "Robert E. Wayland",
+      "dcPublisher": "dan_jeffs@harvard.edu",
+      "dcContributor": "danj",
+      "dcCreated": "2015-07-22T11:59:00-04:00",
+      "dcSpatial": "prod-epiphan004",
+      "dcIsPartOf": 20150333383,
+      "dcType": "L10",
+      "ocMediapackage": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mediapackage start=\"2015-07-22T15:59:00Z\" id=\"ed5514d1-8b95-418d-a814-4807428e4c18\" duration=\"11520000\" xmlns=\"http://mediapackage.opencastproject.org\"><title>Lecture 10</title><series>20150333383</series><seriestitle>The Economics of Business</seriestitle><creators><creator>Robert E. Wayland</creator></creators><contributors><contributor>danj</contributor></contributors><media><track type=\"presenter/delivery\" id=\"b5ac55bf-f2b7-4c2c-aeee-72f81ae01cdf\"><mimetype>video/x-flv</mimetype><tags/><url>rtmp://52.5.150.141:80/live/ed5514d1-8b95-418d-a814-4807428e4c18-presenter-delivery.stream-1920x540</url><duration>11520000</duration><video id=\"video-presenter-delivery\"><device/><encoder/><resolution>1920x540</resolution></video><live>true</live></track><track type=\"presenter/delivery\" id=\"24e4f475-78fb-4a4b-9693-b72eba9bad8b\"><mimetype>video/x-flv</mimetype><tags/><url>rtmp://52.5.150.141:80/live/ed5514d1-8b95-418d-a814-4807428e4c18-presenter-delivery.stream-960x270</url><duration>11520000</duration><video id=\"video-presenter-delivery\"><device/><encoder/><resolution>960x270</resolution></video><live>true</live></track></media><metadata><catalog type=\"dublincore/episode\" id=\"7b982f6b-a77e-4712-aaf7-95ca865674f9\"><mimetype>text/xml</mimetype><tags/><url>https://da4w749qm6awt.cloudfront.net/live/ed5514d1-8b95-418d-a814-4807428e4c18/1ed9e753-c3fd-4c4d-a034-69e608366695/dublincore.xml</url></catalog><catalog type=\"dublincore/series\" id=\"454956d5-180b-4360-a170-ab198ac2e125\"><mimetype>text/xml</mimetype><tags/><url>https://da4w749qm6awt.cloudfront.net/live/ed5514d1-8b95-418d-a814-4807428e4c18/54384b6a-b340-434b-bbc3-1bfa3ed50655/dublincore.xml</url></catalog></metadata><attachments/><publications/></mediapackage>",
+      "mediaType": "AudioVisual",
+      "keywords": "",
+      "modified": "2015-07-18T16:03:44-04:00",
+      "score": 7.45499
+    }
+  }
+}

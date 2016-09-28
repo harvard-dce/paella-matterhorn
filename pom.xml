@@ -11,7 +11,7 @@
 	</prerequisites>
 
 	<properties>
-		<opencast.version>2.0.0</opencast.version>
+		<opencast.version>1.6.3</opencast.version>
 		<paella.version>${project.version}</paella.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -106,7 +106,7 @@
 						<Bundle-SymbolicName> ${project.artifactId} </Bundle-SymbolicName>
 						<Import-Package> org.opencastproject.rest;version=${opencast.version}</Import-Package>
 						<Private-Package>ui.*</Private-Package>
-						<Http-Alias>/paella/ui</Http-Alias>
+						<Http-Alias>/engage/player</Http-Alias>
 						<Http-Classpath>/ui</Http-Classpath>
 						<Http-Welcome>index.html</Http-Welcome>
 					</instructions>

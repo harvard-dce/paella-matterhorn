@@ -1,0 +1,65 @@
+{"footprints": {
+  "total": 4,
+  "footprint": [
+    {
+      "position": 0,
+      "views": 2
+    },
+    {
+      "position": 10,
+      "views": 5
+    },
+    {
+      "position": 20,
+      "views": 2
+    },
+    {
+      "position": 30,
+      "views": 2
+    },
+    {
+      "position": 40,
+      "views": 8
+    },
+        {
+      "position": 50,
+      "views": 5
+    },
+    {
+      "position": 60,
+      "views": 2
+    },
+    {
+      "position": 70,
+      "views": 2
+    },
+    {
+      "position": 80,
+      "views": 8
+    },
+    {
+      "position": 100,
+      "views": 15
+    },
+    {
+      "position": 110,
+      "views": 10
+    },
+    {
+      "position": 120,
+      "views": 5
+    },
+    {
+      "position": 140,
+      "views": 2
+    },
+    {
+      "position": 160,
+      "views": 2
+    },
+    {
+      "position": 180,
+      "views": 2
+    }
+  ]
+}}

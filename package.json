@@ -1,8 +1,8 @@
 {
-  "name": "paella-engage-ui",
-  "version": "5.0.15",
+  "name": "dce-paella-engage-ui",
+  "version": "0.0.11",
   "license": "GPL 3.0",
-  "description": "Paella Player for Matterhorn",
+  "description": "DCE modified UPV Paella Player for Matterhorn 5.0.15",
   "repository": {
     "type": "git",
     "url": "https://github.com/harvard-dce/paella-matterhorn.git"
@@ -20,7 +20,7 @@
     "grunt-parallel": "^0.4.1",
     "grunt-subgrunt": "~1.1.0",
     "http-proxy": "^1.13.2",
-    "dce-paella-extensions": "^1.4.5",
+    "dce-paella-extensions": "^1.4.7",
     "browserify": "^12.0.1",
     "object-path-exists": "^1.0.0"
   },

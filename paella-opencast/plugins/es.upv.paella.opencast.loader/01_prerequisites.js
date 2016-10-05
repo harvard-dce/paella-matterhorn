@@ -45,10 +45,12 @@ paella.opencast = new (Class ({
 					// #DCE end auth check
 					if (data['search-results'].result) {
 						self._episode = data['search-results'].result;
+						// #DCE set logger helper
+						self.setHarvardDCEresourceId(self._episode);
 						defer.resolve(self._episode);		
 					}
 					else {
-						defer.reject();						
+						defer.reject();
 					}
 				},
 				function(data, contentType, code) {
@@ -155,15 +157,14 @@ paella.opencast = new (Class ({
     // #DCE(naomi): end of dce auth addition
     // ------------------------------------------------------------
     // #DCE(gregLogan): start of get resourceId for usertracking "logging helper code"
-    setHarvardDCEresourceId: function (jsonData) {
-        //TODO: This is assuming we only have one result... (greg's comment)
-        var result = data[ 'search-results'].result;
+    setHarvardDCEresourceId: function (result) {
+        var type, offeringId = "";
         if (result != undefined) {
             if (result.dcIsPartOf != undefined) {
                 offeringId = result.dcIsPartOf.toString();
             }
             if (result.dcType != undefined) {
-                type = data[ 'search-results'].result.dcType.toString();
+                type = result.dcType.toString();
             }
         }
         if (offeringId && type) {

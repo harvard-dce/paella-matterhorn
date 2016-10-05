@@ -188,12 +188,15 @@ var OpencastToPaellaConverter = Class.create({
 		});
 		
 		// #DCE start get caption url from episode mp
+		// Note: OC mediapckage does not currently pass Language and Caption format params
+		// So those are hardcoded here as 'dfxp' and 'en' (English)
+		// This is an issue for captions in other languages and formats.
 		var captionURL = getCaptionURL();
 		if (captionURL) {
 			data.captions = [];
 			data.captions.push({
 				url: captionURL,
-			format: 'dfxp',
+				format: 'dfxp',
 				lang: 'en'
 			});
 		}

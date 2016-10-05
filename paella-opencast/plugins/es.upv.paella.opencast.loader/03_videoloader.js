@@ -137,7 +137,7 @@ var OpencastToPaellaConverter = Class.create({
 						time = parseInt(RegExp.$1)*60*60 + parseInt(RegExp.$2)*60 + parseInt(RegExp.$3);
 						imageSource.frames["frame_"+time] = currentAttachment.url;
 						imageSource.count = imageSource.count +1;
-						
+
 			        	if (!(opencastFrameList[time])){
 			            	opencastFrameList[time] = {id:'frame_'+time, mimetype:currentAttachment.mimetype, time:time, url:currentAttachment.url, thumb:currentAttachment.url};
 			        	}
@@ -168,10 +168,8 @@ var OpencastToPaellaConverter = Class.create({
 		if (blackboardSource.count > 0) { blackboardArray.push(blackboardSource); }		
 		if ( (blackboardArray.length > 0) && (presenter != undefined) ){
 			presenter.sources.image = blackboardArray;
-		}				
+		}
 	
-
-		
 
 		var data =  {
 			metadata: {
@@ -189,8 +187,37 @@ var OpencastToPaellaConverter = Class.create({
 			data.frameList.push(opencastFrameList[key]);
 		});
 		
+		// #DCE start get caption url from episode mp
+		var captionURL = getCaptionURL();
+		if (captionURL) {
+			data.captions = [];
+			data.captions.push({
+				url: captionURL,
+			format: 'dfxp',
+				lang: 'en'
+			});
+		}
+
+		function getCaptionURL() {
+			var catalogs = episode.mediapackage.metadata.catalog;
+			if (!(catalogs instanceof Array)) {
+				catalogs = [catalogs];
+			}
+
+			var catalog = null;
+
+			for (var i = 0; i < catalogs.length; ++i) {
+				if (catalogs[i].type == 'captions/timedtext') {
+					catalog = catalogs[i];
+					break;
+				}
+			}
+			if (catalog) {
+				return catalog.url;
+			}
+		}
+		// #DCE end get caption url from episode mp
 		return data;
 	}
-		
 });
 

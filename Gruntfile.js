@@ -24,6 +24,12 @@ module.exports = function (grunt) {
         // Paella Opencast
         {
           expand: true, cwd: 'paella-opencast/plugins', src:[ '**'], dest: 'build/paella/plugins'
+        },
+        // DCE temp Paella override fix for https://github.com/polimediaupv/paella/issues/219
+        {
+          expand: true, dot: true, cwd: 'vendor/paella_overrides/plugins', src:[ '**'], dest: 'build/paella/plugins'
+        }, {
+          expand: true, dot: true, cwd: 'vendor/paella_overrides/src', src:[ '**'], dest: 'build/paella/src'
         }]
       },
       "dce-paella-extensions": {

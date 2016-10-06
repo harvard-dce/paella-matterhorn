@@ -35,7 +35,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0baac156-ded4-4a25-b002-49f36ead5fb4/presentation_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0baac156-ded4-4a25-b002-49f36ead5fb4/presentation_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
               "checksum": {
                 "type": "md5",
                 "$": "6e9e8a88594755dd6642dc96c1082bd5"
@@ -77,7 +78,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d7086069-ec1f-4862-a75f-822cbffdee5f/presentation_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d7086069-ec1f-4862-a75f-822cbffdee5f/presentation_trimmed.mp4",
+               "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
               "checksum": {
                 "type": "md5",
                 "$": "b2a93ef7edc9410af063e3ec24a27c13"
@@ -119,7 +121,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0bcfae1e-b1c0-4e57-b582-02e833d20041/presenter_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0bcfae1e-b1c0-4e57-b582-02e833d20041/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",
               "checksum": {
                 "type": "md5",
                 "$": "e3d75f3cd9ea220b748b9e3fd9c62333"
@@ -161,7 +164,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/924a6001-506a-4af0-b8f3-cdc6873be638/presenter_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/924a6001-506a-4af0-b8f3-cdc6873be638/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",              
               "checksum": {
                 "type": "md5",
                 "$": "67cc9713b782bc46cd78a3b64d3f0d11"
@@ -203,7 +207,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c9814b83-2151-4510-b127-1c55e3f9aba7/presenter_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c9814b83-2151-4510-b127-1c55e3f9aba7/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",              
               "checksum": {
                 "type": "md5",
                 "$": "1be28a9d1b62c08442de770084e0b5dd"
@@ -245,7 +250,8 @@
                   "multiaudio"
                 ]
               },
-              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/33281f8b-82c1-442a-9d0e-704035dcbe2e/presentation_trimmed.mp4",
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/33281f8b-82c1-442a-9d0e-704035dcbe2e/presentation_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
               "checksum": {
                 "type": "md5",
                 "$": "b5b01d618ff5a4c97abb4053b8787c9a"
@@ -287,7 +293,7 @@
               "tags": {
                 "tag": "archive"
               },
-              "url": "https://s3.amazonaws.com/caption-file-test-server/MATH_15_SEC11_12_7_15_DFXP.xml"
+              "url": "http://127.0.0.1:3000/caption-file-test-server/captions.dfxp"
             },
             {
               "type": "dublincore/series",

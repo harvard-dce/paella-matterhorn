@@ -77,7 +77,8 @@ router.get('/search/episode.json*', episode);
 // Serve a canned series for series requests.
 router.get('/search/series.json*', series);
 
-router.get('/captions.dfxp', captions);
+// Service canned captions
+router.get('/caption-file-test-server/captions.dfxp', captions);
 
 // Serve a canned episode for episode requests.
 router.get('/annotation/annotations.json*', annotations);
@@ -107,6 +108,7 @@ router.get('/*', passToProxy);
 // Serve /engage/player/* requests from the local build folder.
 app.use('/engage/player', express.static('build/paella-opencast'));
 app.use('/engage/player', express.static('build/paella-opencast/resources'));
+app.use('/engage/player/test_media', express.static('fixtures/test_media'));
 app.use('/', router);
 
 

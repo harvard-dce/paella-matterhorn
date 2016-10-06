@@ -61,6 +61,9 @@ var OpencastAccessControl = Class.create(paella.AccessControl, {
 			paella.opencast.getUserInfo().then(
 				function(me) {
 					var isAnonymous = ((me.roles.length == 1) && (me.roles[0] == me.org.anonymousRole));
+					//#DCE Opencast 1.6x me.username, me.name vs OC 2x me.user.name, me.user.username
+					me.user = me;
+					// #DCE end
 					self._userData = {
 						username: me.user.username,
 						name: me.user.name || me.user.username || "",

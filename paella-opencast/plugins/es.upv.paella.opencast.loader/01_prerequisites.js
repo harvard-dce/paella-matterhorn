@@ -43,6 +43,13 @@ paella.opencast = new (Class ({
 						defer.reject();
 					}
 					// #DCE end auth check
+					// #DCE verify that results returned at least one episode
+					var totalItems = parseInt(data['search-results'].total);
+					if (totalItems === 0) {
+						self.showLoadErrorMessage(paella.dictionary.translate("No recordings found for episode id") + ": \"" + episodeId + "\"");
+						defer.reject();
+					}
+					// #DCE end total check
 					if (data['search-results'].result) {
 						self._episode = data['search-results'].result;
 						// #DCE set logger helper

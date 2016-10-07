@@ -311,9 +311,8 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 
 	getCurrentQuality:function() {
 		var defer = $.Deferred();
-		// #DCE can't tell if the original was a bug or just a very different expation of the rtmp source format
-		// original: defer.resolve(this._getQualityObject(this._currentQuality,this._stream.sources.image[this._currentQuality]));
 		// #DCE using the default paella/Opencast/HTML5 version of the stream sources structure
+		// ref https://github.com/polimediaupv/paella/issues/220
 		defer.resolve(this._getQualityObject(this._currentQuality,this._stream.sources[this._streamName][this._currentQuality]));
 		// #DCE end change source objet structure for rtmp
 		return defer;

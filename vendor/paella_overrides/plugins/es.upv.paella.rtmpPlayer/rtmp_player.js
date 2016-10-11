@@ -151,8 +151,8 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 	_deferredAction:function(action) {
 		var This = this;
 		var defer = new $.Deferred();
-
-		if (This.ready) {
+		//#DCE there is no "This.ready", seemed reasonable to add the underbar
+		if (This._ready) {
 			defer.resolve(action());
 		}
 		else {
@@ -261,6 +261,11 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 				$(this.swfContainer).trigger("paella:flashvideoready");
 
 				return this._deferredAction(function() {
+					//#DCE HACK to enable control bar plugins on rtmp live event
+					if(paella.player.isLiveStream()) {
+						paella.player.play();
+					}
+					//#DCE end HACK for control bar plugins on rtmp live event
 					return stream;
 				});
 			}
@@ -295,10 +300,11 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 		var sources = this._stream.sources.rtmp;
 		this._currentQuality = index<sources.length ? index:0;
 		var source = sources[index];
-		if (source.isLiveStream) {
-			return paella_DeferredResolved();
-		}
-		else {
+		// #DCE enable changing source (stream resolution) on Live events
+		//if (source.isLiveStream) {
+		//	return paella_DeferredResolved();
+		//}
+		//else {
 			var currentTime = this._currentTime;
 			This.load()
 				.then(function() {
@@ -306,7 +312,7 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 					defer.resolve();
 				});
 			return defer;
-		}
+		//}
 	},
 
 	getCurrentQuality:function() {

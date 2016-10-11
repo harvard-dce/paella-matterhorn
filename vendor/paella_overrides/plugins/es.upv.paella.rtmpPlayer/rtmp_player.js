@@ -27,6 +27,11 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 				This._isReady = true;
 				This._duration = params.duration;
 				$(This.swfContainer).trigger("paella:flashvideoready");
+					//#DCE HACK to enable control bar plugins on rtmp live event
+					if (paella.player.isLiveStream()) {
+						paella.player.play();
+					}
+					//#DCE end HACK for control bar plugins on rtmp live event
 			}
 			if (eventName=="progress") {
 				try { This.flashVideo.setVolume(This._volume); }
@@ -151,8 +156,7 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 	_deferredAction:function(action) {
 		var This = this;
 		var defer = new $.Deferred();
-		//#DCE there is no "This.ready", seemed reasonable to add the underbar
-		if (This._ready) {
+		if (This.ready) {
 			defer.resolve(action());
 		}
 		else {
@@ -261,11 +265,6 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 				$(this.swfContainer).trigger("paella:flashvideoready");
 
 				return this._deferredAction(function() {
-					//#DCE HACK to enable control bar plugins on rtmp live event
-					if(paella.player.isLiveStream()) {
-						paella.player.play();
-					}
-					//#DCE end HACK for control bar plugins on rtmp live event
 					return stream;
 				});
 			}
@@ -301,6 +300,10 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 		this._currentQuality = index<sources.length ? index:0;
 		var source = sources[index];
 		// #DCE enable changing source (stream resolution) on Live events
+		// resetting all the various ready states
+		This.ready = false;
+		This._ready = false;
+		This._isReady = false;
 		//if (source.isLiveStream) {
 		//	return paella_DeferredResolved();
 		//}

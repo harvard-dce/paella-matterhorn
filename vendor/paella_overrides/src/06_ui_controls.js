@@ -127,10 +127,9 @@ Class ("paella.PlaybackBar", paella.DomNode,{
 		$(playbackFull.domElement).bind('mouseup',function(event) { paella.utils.mouseManager.up(event); });
 
 		if (paella.player.isLiveStream()) {
-			// #DCE visibility:hiden vs display:none
-			//$(this.domElement).hide();
+			// #DCE start, need CS50 inline playback bar to take up space during live event
 			$(this.domElement).css("visibility", "hidden");
-			// #DCE
+			// #DCE end, swapped paella5's jQuery ".hide()" (display:none) for DCE CS50's visibility hidden
 		}
 		setTimeout(function(){
 			self.drawTimeMarks();

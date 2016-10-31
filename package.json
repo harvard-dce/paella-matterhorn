@@ -20,7 +20,7 @@
     "grunt-parallel": "^0.4.1",
     "grunt-subgrunt": "~1.1.0",
     "http-proxy": "^1.13.2",
-    "dce-paella-extensions": "^1.6.23",
+    "dce-paella-extensions": "^1.6.3",
     "browserify": "^12.0.1",
     "object-path-exists": "^1.0.0"
   },

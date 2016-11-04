@@ -191,17 +191,23 @@ var OpencastToPaellaConverter = Class.create({
 		// Note: OC mediapckage does not currently pass Language and Caption format params
 		// So those are hardcoded here as 'dfxp' and 'en' (English)
 		// This is an issue for captions in other languages and formats.
-		var captionURL = getCaptionURL();
-		if (captionURL) {
+		// #DCE is using tags identify extra information (machine or human translation)
+		// The Matterhorn catalogs tags array is really under captionData.tags.tag (not a typo!)
+		// Catalog tags have to be saved in paella.dce because paella.captions is created from caption url results
+		// Example:"catalog": [{.... "tags": {"tag": "archive"}] or  "catalog": [{.... "tags": {"tag": [ "archive", "automated"]}}]
+		var captionData = getCaptionData();
+		if (captionData) {
+			paella.dce = paella.dce || {};
+			paella.dce.captiontags = captionData.tags.tag;
 			data.captions = [];
 			data.captions.push({
-				url: captionURL,
+				url: captionData.url,
 				format: 'dfxp',
 				lang: 'en'
 			});
 		}
 
-		function getCaptionURL() {
+		function getCaptionData() {
 			var catalogs = episode.mediapackage.metadata.catalog;
 			if (!(catalogs instanceof Array)) {
 				catalogs = [catalogs];
@@ -215,9 +221,7 @@ var OpencastToPaellaConverter = Class.create({
 					break;
 				}
 			}
-			if (catalog) {
-				return catalog.url;
-			}
+			return catalog;
 		}
 		// #DCE end get caption url from episode mp
 		return data;

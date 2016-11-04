@@ -34,7 +34,7 @@ function loadOpencastPaellaDCE(containerId) {
 			if (data.streams.length < 1) {
 				paella.messageBox.showError("Error loading video! No streams found");
 			}
-			paella.dce = {};
+			paella.dce = paella.dce || {};
 			paella.dce.sources = data.streams;
 			// Hide the slave stream from paella if ios, will be used in singleVideoToggle
 			if (base.userAgent.system.iOS) {

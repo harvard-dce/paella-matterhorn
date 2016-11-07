@@ -26,7 +26,7 @@ paella.opencast = new (Class ({
 	
 	getEpisode: function() {
 		var self = this;
-		var defer = new $.Deferred();		
+		var defer = new $.Deferred();
 
 		if (self._episode) {
 			defer.resolve(self._episode);
@@ -40,21 +40,21 @@ paella.opencast = new (Class ({
 					if (typeof (jsonData) == "string") jsonData = JSON.parse(jsonData);
 					// test if result is Harvard auth or episode data
 					if (! self.isHarvardDceAuth(jsonData)) {
-						defer.reject(jsonData);
+						return defer.reject(jsonData);
 					}
 					// #DCE end auth check
 					// #DCE verify that results returned at least one episode
 					var totalItems = parseInt(data['search-results'].total);
 					if (totalItems === 0) {
 						self.showLoadErrorMessage(paella.dictionary.translate("No recordings found for episode id") + ": \"" + episodeId + "\"");
-						defer.reject();
+						return defer.reject();
 					}
 					// #DCE end total check
 					if (data['search-results'].result) {
 						self._episode = data['search-results'].result;
 						// #DCE set logger helper
 						self.setHarvardDCEresourceId(self._episode);
-						defer.resolve(self._episode);		
+						return defer.resolve(self._episode);
 					}
 					else {
 						defer.reject();
@@ -65,7 +65,7 @@ paella.opencast = new (Class ({
 				}
 			);
 		}		
-		return defer;		
+		return defer;
 	},
 	
 	

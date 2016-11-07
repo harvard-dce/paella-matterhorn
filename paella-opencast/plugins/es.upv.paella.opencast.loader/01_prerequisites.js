@@ -40,7 +40,7 @@ paella.opencast = new (Class ({
 					if (typeof (jsonData) == "string") jsonData = JSON.parse(jsonData);
 					// test if result is Harvard auth or episode data
 					if (! self.isHarvardDceAuth(jsonData)) {
-						defer.reject();
+						defer.reject(jsonData);
 					}
 					// #DCE end auth check
 					// #DCE verify that results returned at least one episode
@@ -142,24 +142,29 @@ paella.opencast = new (Class ({
                 $(document).trigger(paella.events.error, {
                     error: message
                 });
-                return false;
             }
-            
-            // auth-results present, dealing with auth errors
-            var authResult = jsonData[ 'dce-auth-results'];
-            var returnStatus = authResult.dceReturnStatus;
-            if (("401" == returnStatus || "403" == returnStatus) && authResult.dceLocation) {
-                window.location.replace(authResult.dceLocation);
-            } else {
-                paella.messageBox.showError(authResult.dceErrorMessage);
-                $(document).trigger(paella.events.error, {
-                    error: authResult.dceErrorMessage
-                });
-            }
+            // (MATT-2212) DCE auth redirect is performed within the getEpisode() failure path (via isHarvardDceAuthRedirect below)
             return false;
         } else {
             return true;
         }
+    },
+    // This method is used when getEpisode fails in order to determine if auth redirect is possible (MATT-2212)
+    isHarvardDceAuthRedirect: function (jsonData, dceAuthError) {
+        if (jsonData && jsonData[ 'dce-auth-results']) {
+            var authResult = jsonData[ 'dce-auth-results'];
+            if (authResult && authResult.dceReturnStatus) {
+                var returnStatus = authResult.dceReturnStatus;
+                if (("401" == returnStatus || "403" == returnStatus) && authResult.dceLocation) {
+                    window.location.replace(authResult.dceLocation);
+                    return true; // sucess!
+                } else {
+                    dceAuthError = " " + authResult.dceErrorMessage;
+                }
+            }
+        }
+        // DCE redirect could not be performed or had an error
+        return false;
     },
     // #DCE(naomi): end of dce auth addition
     // ------------------------------------------------------------

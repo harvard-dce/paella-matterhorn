@@ -43,9 +43,15 @@ function loadOpencastPaellaDCE(containerId) {
 			}
 			paella.load(containerId, {data:data});
 		},
-		function(){
-			// #DCE bypassing paella5 opencast auth, current DCE version is performed within getEpisode()
-			paella.messageBox.showError("Unable to load video " + paella.utils.parameters.get('id'));
+		function(jsonData){
+			// #DCE start specific DCE auth handling, formally in isHarvardDceAuth() (MATT-2212)
+			var dceAuthError = '';
+			if (jsonData && jsonData[ 'dce-auth-results'] && paella.opencast.isHarvardDceAuthRedirect(jsonData, dceAuthError)) {
+				base.log.debug("Successfully performed DCE auth redirect");
+			// #DCE end specific DCE auth handling
+			} else {
+				paella.messageBox.showError("Unable to load video " + paella.utils.parameters.get('id') + dceAuthError);
+			}
 		}
 	);
 }

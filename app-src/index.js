@@ -34,8 +34,12 @@ function disableAutoHiding() {
   $(document).on('paella:controlBarLoaded', getRidOfOnPlayEvent);
 
   function getRidOfOnPlayEvent() {
-    $(document).off('paella:controlBarLoaded', getRidOfOnPlayEvent);
-    paella.player.controls.restartHideTimer = noOp;
+    // MATT-1999 do not get rid of autohide when player is embedded in iframe
+    // Only turn off autohide when player is loaded in it's own page
+    if (window.self == window.top) {
+      $(document).off('paella:controlBarLoaded', getRidOfOnPlayEvent);
+      paella.player.controls.restartHideTimer = noOp;
+    }
   }
 }
 

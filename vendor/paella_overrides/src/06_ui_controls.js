@@ -720,7 +720,10 @@ Class ("paella.ControlsContainer", paella.DomNode,{
 		function hideIfNotCanceled() {
 			if (This._doHide) {
 				$(This.domElement).css({opacity:0.0});
-				$(This.domElement).hide();
+				// #DCE MATT-1595, already transaprent, leave width alone (no hide!)
+				// fix for staggered control bar plugin display
+				// $(This.domElement).hide();
+				// #DCE MATT-1595 end
 				This.domElement.setAttribute('aria-hidden', 'true');
 				This._hidden = true;
 				paella.events.trigger(paella.events.controlBarDidHide);
@@ -747,14 +750,18 @@ Class ("paella.ControlsContainer", paella.DomNode,{
 	},
 
 	show:function() {
+		// #DCE MATT-1595 change show-hide to opaque-transparent, fix staggered plugin display
+		var This = this;
+		function finishShow() {
+			This.domElement.setAttribute('aria-hidden', 'false');
+			This._hidden = false;
+			paella.events.trigger(paella.events.controlBarDidShow);
+		}
 		if (this.isEnabled) {
 			$(this.domElement).stop();
 			this._doHide = false;
-			this.domElement.style.opacity = 1.0;
-			this.domElement.setAttribute('aria-hidden', 'false');
-			this._hidden = false;
-			$(this.domElement).show();
-			paella.events.trigger(paella.events.controlBarDidShow);
+			// #DCE MATT-1595 only need to make opaque, no size change
+			$(this.domElement).animate({opacity:1.0},{duration:50, complete: finishShow});
 		}
 	},
 

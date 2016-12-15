@@ -30,22 +30,8 @@ function clearDoneUrlCookie() {
     'domain=.harvard.edu; path=/';
 }
 
-function disableAutoHiding() {
-  $(document).on('paella:controlBarLoaded', getRidOfOnPlayEvent);
-
-  function getRidOfOnPlayEvent() {
-    $(document).off('paella:controlBarLoaded', getRidOfOnPlayEvent);
-    paella.player.controls.restartHideTimer = noOp;
-  }
-}
-
-function noOp() {
-}
-
-
 ((function go() {
   setUpParentFrameCommunications(document);
-  disableAutoHiding();
   clearDoneUrlCookie();
   router.route();
 })());

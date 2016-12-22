@@ -38,10 +38,6 @@ dce-paella-extensions is a dependency that contains DCE-specific Paella changes.
 paella-engage-ui (polimediaupv/paella-matterhorn.git#...) is a dependency that contains Polimedia UPV Paella Opencast code.
 browserify supports building the DCE app-src extensions from this repository (extra features, such as routing)
 
-This project uses [NPM Shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap). It installs modules from the `npm-shrinkwrap.json` file, not the `package.json` file and will install the exact versions of the dependencies and subdependencies defined in `npm-shrinkwrap.json`. If you want to update dependencies, you must run `npm install --save <module name>@<version>` in order to update both `package.json` and `npm-shrinkwrap.json`. (`<module name>`  is the name of the dependency module you want to update. For example, dce-paella-extensions.)
-
-[player-router](https://github.com/harvard-dce/player-router) handles URL hash-based routing. app-src/index.js is the module within paella-matterhorn that handles webapp functionality external to Paella.
-
 Running locally (Development)
 ---------------
 Globally install Grunt and Jshinit:
@@ -61,13 +57,15 @@ This will create a server that will serve local copies of files under `build/` a
 
 To play a video in the test server, take a URL from production (matterhorn.dce.harvard.edu) and replace the host with `localhost:3000`. Make sure you use the https protocol.
 
-If you want to run it under http instead of https, you can run the test server with `node test-server.js --use-http`.
+If you want to run it under https instead of http, you can run the test server with `node test-server.js --use-https`.
 
 To avoid having to run `npm publish` and `npm install` in the dce-paella-extensions local repo, just to see if a change worked in the context of paella-matterhorn, you can:
 
 - From your local dce-paella-extensions project directory, Run `npm link` (with sudo if your global node_modules is in a place that requires it).
 - Run `npm link dce-paella-extensions` in this directory. Now there will be a symlink-like link to your local dce-paella-extensions project.
 - Then, run `grunt build.debug` in this directory to rebuild the project.
+
+
 
 Tests
 -----
@@ -116,7 +114,7 @@ These are entry points into the four things that the modules in `app-src` curren
 
 - If it exists, it clears a cookie named `done_url` in order to prevent certain authentication problems. I forget specifically which, but Naomi Maekawa will probably remember if you ask her.
 
-- Runs the [DCE player-router](https://github.com/harvard-dce/player-router) in order to process the URL and respond to seek requests that are the result of URL changes from either the user or a parent window.
+- Runs the included `player-router` module in order to process the URL and respond to seek requests that are the result of URL changes from either the user or a parent window.
 
 ============================
 The following are the original UPV Paella Player README

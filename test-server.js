@@ -8,8 +8,8 @@ var jsonfile = require('jsonfile');
 var useHTTPS = false;
 var verbose = true;
 
-if (process.argv.length > 2 && process.argv[2] === '--use-http') {
-  useHTTPS = false;
+if (process.argv.length > 2 && process.argv[2] === '--use-https') {
+  useHTTPS = true;
 }
 
 //var matterhornProxyURL = 'https://matterhorn.dce.harvard.edu/';
@@ -102,6 +102,11 @@ router.put('/annotation/[0-9]*', annotations);
 
 // Serve a canned footprint for footprint requests.
 router.get('/usertracking/footprint.json*', footprint);
+
+// Return true when asked if usertracking is enabled
+router.get('/usertracking/detailenabled', function(req, res) {
+  res.send('true');
+});
 
 // // Quitely consume the usertracking puts
 router.get('/usertracking/*', swallow);

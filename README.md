@@ -65,7 +65,9 @@ To avoid having to run `npm publish` and `npm install` in the dce-paella-extensi
 - Run `npm link dce-paella-extensions` in this directory. Now there will be a symlink-like link to your local dce-paella-extensions project.
 - Then, run `grunt build.debug` in this directory to rebuild the project.
 
+If needed, static files, such as `.html` mockups, can be served by dropping into the `/static` directory.
 
+By default, the player auth requests to `/search/episode.json` will be proxied. To serve a canned authResult response make a copy of `fixtures/test-auth/_mpid_.json` and name according to the mpid being used.
 
 Tests
 -----

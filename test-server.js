@@ -122,8 +122,13 @@ router.get('/*', passToProxy);
 app.use('/engage/player', express.static('build/paella-opencast'));
 app.use('/engage/player', express.static('build/paella-opencast/resources'));
 app.use('/engage/player/test_media', express.static('fixtures/test_media'));
-app.use('/', router);
 
+if (fs.existsSync('./static', fs.constants.R_OK | fs.constants.W_OK)) {
+  app.use('/static', express.static('static'));
+  console.log("serving static files from ./static");
+}
+
+app.use('/', router);
 
 function skipToContent(req, res, next) {
   log('Skipping to', mostRecentWatchReqUrl);
@@ -139,8 +144,16 @@ function swallow(req, res, next) {
 }
 
 function episode(req, res) {
-  log('Serving episode.');
-  res.json(cannedEpisode);
+  var mpid = req.query.id;
+  var cannedAuthFixture = __dirname + '/fixtures/test-auth/'+ mpid + '.json';
+  if (fs.existsSync(cannedAuthFixture)) {
+    log('Serving auth result.');
+    var authResult = jsonfile.readFileSync(cannedAuthFixture);
+    res.json(authResult);
+  } else {
+    log('Serving episode.');
+    res.json(cannedEpisode);
+  }
 }
 
 function me(req, res) {

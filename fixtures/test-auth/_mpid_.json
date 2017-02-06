@@ -1,0 +1,20 @@
+{
+  "_comment": [
+    "This is an example auth result json response of the kind returned by /search/epiosde.json requests. ",
+    "To have the test server return this rather than proxying the request, make a copy of this example ",
+    "and name it according to the mpid, e.g., 3fb07e12-458a-4119-b4ec-a9f9f28146da&.json. If the ",
+    "doneUrlCookie and dceLocation values are important you can extract the appropriate values from ",
+    "a real request in your browser's dev tools network tab."
+  ],
+  "dce-auth-results": {
+    "dceErrorMessage": "You must log in order to gain access to /2017/02/29997/L01",
+    "dceUserId": "not_available",
+    "dceUserGroups": "not_available",
+    "dceResource": "not_available",
+    "dceReturnStatus": 401,
+    "doneUrlCookie": "encrypted-done-url-cookie-value",
+    "dceLocation": "https://cm.auth.example.harvard.edu/login/cas.mhtml?done=[done-url]&logLevel=DEBUG&error=[errmsg]",
+    "dceUserIdType": "not_available"
+  }
+}
+

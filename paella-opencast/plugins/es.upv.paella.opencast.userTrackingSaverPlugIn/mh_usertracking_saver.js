@@ -18,15 +18,18 @@ new (Class (paella.userTracking.SaverPlugIn, {
 	},
 
 	log: function(event, params) {
-		paella.player.videoContainer.currentTime().then(function(ct){
-			var videoCurrentTime = parseInt(ct + paella.player.videoContainer.trimStart());
+	  paella.player.videoContainer.masterVideo().getVideoData().then(function(videoData) {
+
+			var videoCurrentTime = parseInt(videoData.currentTime + paella.player.videoContainer.trimStart());
+			var isPlaying = paella.player.isLiveStream() ? "live" : (!videoData.paused).toString();
+
 			var opencastLog = {
 				_method: 'PUT',
 				'id': paella.player.videoIdentifier,
 				'type': undefined,
 				'in': videoCurrentTime,
 				'out': videoCurrentTime,
-				'playing': !paella.player.videoContainer.paused()
+				'playing': isPlaying
 			};
 
 			switch (event) {

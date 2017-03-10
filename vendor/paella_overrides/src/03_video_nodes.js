@@ -505,7 +505,9 @@ Class ("paella.Html5Video", paella.VideoElementBase,{
 			// #DCE MATT-2046
 			// For the browsers that support it, add playsinline for the video
 			this.video.setAttribute("playsinline", "");
-
+			// #DCE MATT-2226
+			// For UIWebView in next Instructure Canvas mobile App (going to be created with pre-iOS 10.0(?))
+			this.video.setAttribute('webkit-playsinline', "");
 			sourceElem.src = stream.src;
 			sourceElem.type = stream.type;
 			this.video.load();

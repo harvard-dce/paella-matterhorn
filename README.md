@@ -62,6 +62,9 @@ If you want to run it under https instead of http, you can run the test server w
 To avoid having to run `npm publish` and `npm install` in the dce-paella-extensions local repo, just to see if a change worked in the context of paella-matterhorn, you can:
 
 - From your local dce-paella-extensions project directory, Run `npm link` (with sudo if your global node_modules is in a place that requires it).
+- In this local repo, you may need to change package.json "dce-paella-extensions" to point to a version number, instead of the github path
+--- For example "dce-paella-extensions": "1.6.8" versus "dce-paella-extensions": "harvard-dce/dce-paella-extensions#v1.6.18"
+--- The direct version retries from https://www.npmjs.com/package/dce-paella-extensions, the pathed versio retrieves from the github repo tag.
 - Run `npm link dce-paella-extensions` in this directory. Now there will be a symlink-like link to your local dce-paella-extensions project.
 - Then, run `grunt build.debug` in this directory to rebuild the project.
 

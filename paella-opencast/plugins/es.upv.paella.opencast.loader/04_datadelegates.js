@@ -224,6 +224,52 @@ paella.dataDelegates.UserDataDelegate = Class.create(paella.DataDelegate,{
 
 });
 
+// #DCE
+paella.dataDelegates.MHCaptionsDataDelegate = Class.create(paella.DataDelegate,{
+	read:function(context,params,onSuccess) {
+		var catalogs = paella.matterhorn.episode.mediapackage.metadata.catalog;
+		if (!(catalogs instanceof Array)) {
+			catalogs = [catalogs];
+		}
+
+		var captionsFound = false;
+
+		for (var i=0; ((i<catalogs.length) && (captionsFound == false)); ++i) {
+			var catalog = catalogs[i];
+
+			if (catalog.type == 'captions/timedtext') {
+				captionsFound = true;
+
+				// Load Captions!
+				paella.ajax.get({url: catalog.url},
+					function(data, contentType, returnCode, dataRaw) {
+
+						var parser = new paella.matterhorn.DFXPParser();
+						var captions = parser.parseCaptions(data);
+						if (onSuccess) onSuccess({captions:captions}, true);
+
+					},
+					function(data, contentType, returnCode) {
+						if (onSuccess) { onSuccess({}, false); }
+					}
+				);
+			}
+		}
+
+		if (captionsFound == false){
+			if (onSuccess) { onSuccess({}, false); }
+		}
+	},
+
+	write:function(context,params,value,onSuccess) {
+		if (onSuccess) { onSuccess({}, false); }
+	},
+
+	remove:function(context,params,onSuccess) {
+		if (onSuccess) { onSuccess({}, false); }
+	}
+});
+// #DCE end
 
 paella.dataDelegates.MHFootPrintsDataDelegate = Class.create(paella.DataDelegate,{
 	read:function(context,params,onSuccess) {

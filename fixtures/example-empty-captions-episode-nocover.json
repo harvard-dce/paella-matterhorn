@@ -1,0 +1,357 @@
+{
+  "search-results": {
+    "searchTime": "3",
+    "total": "1",
+    "limit": "1",
+    "offset": "0",
+    "query": "(id:83ebde9d\\-0812\\-4071\\-8fb7\\-a97c1472ceb9) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:Series AND -oc_deleted:[* TO *]",
+    "result": {
+      "org": "mh_default_org",
+      "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+      "mediapackage": {
+        "start": "2015-05-05T23:39:00Z",
+        "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+        "duration": "6875847",
+        "title": "Lecture 11",
+        "series": 20150221144,
+        "seriestitle": "Fundamentals of Website Development",
+        "creators": {
+          "creator": "David P. Heitmeyer"
+        },
+        "contributors": {
+          "contributor": "kking"
+        },
+        "media": {
+          "track": [
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "e4e7bb1e-d9de-4edd-97bf-464cb4980c32",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0baac156-ded4-4a25-b002-49f36ead5fb4/presentation_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "6e9e8a88594755dd6642dc96c1082bd5"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 127999
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 3235131,
+                "framerate": 30,
+                "resolution": "1920x1080",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "dc6c64f5-3106-4a1f-8f25-7f2ac7892dac",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d7086069-ec1f-4862-a75f-822cbffdee5f/presentation_trimmed.mp4",
+               "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "b2a93ef7edc9410af063e3ec24a27c13"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 96000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 400131,
+                "framerate": 30,
+                "resolution": "960x540",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "29614b12-fc93-4314-950d-9d4c1004ca26",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0bcfae1e-b1c0-4e57-b582-02e833d20041/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "e3d75f3cd9ea220b748b9e3fd9c62333"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 128000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 4665958,
+                "framerate": 30,
+                "resolution": "1920x1080",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "dbab6703-f614-479f-9cd0-28df2f97241c",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/924a6001-506a-4af0-b8f3-cdc6873be638/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",              
+              "checksum": {
+                "type": "md5",
+                "$": "67cc9713b782bc46cd78a3b64d3f0d11"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 96000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 399920,
+                "framerate": 30,
+                "resolution": "960x540",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "e9e0b250-a4b8-4cec-9c7f-9e8094ce3ff6",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c9814b83-2151-4510-b127-1c55e3f9aba7/presenter_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile.mp4",              
+              "checksum": {
+                "type": "md5",
+                "$": "1be28a9d1b62c08442de770084e0b5dd"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 128000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 1880452,
+                "framerate": 30,
+                "resolution": "1440x810",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "7082fd48-4f7c-4d91-9fa7-8dc7b682d8b9",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "//url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/33281f8b-82c1-442a-9d0e-704035dcbe2e/presentation_trimmed.mp4",
+              "url": "http://127.0.0.1:3000/engage/player/test_media/5minEPfile-2.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "b5b01d618ff5a4c97abb4053b8787c9a"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 127999
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 1644528,
+                "framerate": 30,
+                "resolution": "1440x810",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            }
+          ]
+        },
+
+        "metadata": {
+          "catalog": [
+            {
+              "type": "captions/timedtext",
+              "id": "19a73d8e-bb6f-4d4f-9f8b-6a6f26e570f6",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "automated"
+                ]
+              },
+              "url": "http://127.0.0.1:3000/caption-file-test-server/captions.dfxp"
+            },
+            {
+              "type": "dublincore/series",
+              "id": "6d3d9c28-a8bf-4d82-9d70-10df7365472b",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d018a1aa-899a-4b35-adb8-f6c4abf3d8e5/bef8cadd-aa7f-439d-9277-898abf2058cc/series.xml"
+            },
+            {
+              "type": "dublincore/episode",
+              "id": "d5e1fc46-b912-4a3a-84fe-fb30441388da",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d018a1aa-899a-4b35-adb8-f6c4abf3d8e5/241df3e4-fad0-48b9-9b8e-6c0de107d26c/episode.xml"
+            }
+          ]
+        },
+        "attachments": {
+          "attachment": [
+            {
+              "type": "attachment/notes",
+              "id": "0c2dfb51-2251-4390-8bc3-cd23eba4b4dd",
+              "tags": {"tag": "archive"},
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d77f6c3e-a8e0-4be2-b94d-105aa8bedd4a/1d177e7c-c8da-4fd1-a26b-b2c74412aa86/upload.txt"
+            }
+          ]
+        },
+
+        "publications": ""
+      },
+      "dcExtent": 8165669,
+      "dcTitle": "Lecture 11",
+      "dcCreator": "David Smith",
+      "dcPublisher": "abc@y.edu",
+      "dcContributor": "abing",
+      "dcDescription": "Grab Bag",
+      "dcCreated": "2015-05-05T19:39:00-04:00",
+      "dcSpatial": "prod-epiphan004",
+      "dcIsPartOf": 20150221144,
+      "dcType": "L11",
+      "ocMediapackage": "emptied, because its not used",
+      "mediaType": "AudioVisual",
+      "keywords": "",
+      "modified": "2015-05-06T16:23:17-04:00",
+      "score": 7.482662
+    }
+  }
+}

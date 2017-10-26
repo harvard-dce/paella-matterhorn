@@ -1,21 +1,37 @@
 {
-  "name": "paella-opencast",
-  "version": "5.2.5",
+  "name": "dce-paella-opencast",
+  "version": "0.1.2",
   "license": "GPL-3.0",
-  "description": "Paella Player for Matterhorn",
+  "description": "DCE modified UPV Opencast Paella Player v5.2.5",
   "repository": {
     "type": "git",
-    "url": "https://github.com/polimediaupv/paella-matterhorn.git"
+    "url": "https://github.com/harvard-dce/paella-matterhorn.git"
   },
   "dependencies": {
-    "express": "^4.13.4",
+    "dce-paella-extensions": "github:harvard-dce/dce-paella-extensions#t/MATT-2386-upgrade-to-paella-5.2.x",
+    "express": "^4.15.4",
+    "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
-    "http-proxy": "^1.13.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-live-server": "0.0.30",
+    "gulp-rename": "^1.2.2",
+    "gulp-sort": "^2.0.0",
+    "http-proxy": "^1.16.2",
     "merge-stream": "^1.0.1",
+    "object-path-exists": "^1.0.0",
+    "serve-static": "^1.13.1",
     "paellaplayer": "github:polimediaupv/paella#5.2.5"
   },
   "devDependencies": {
-    "gulp-connect": "^5.0.0"
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^5.0.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "jsonfile": "~2.2.1",
+    "smokestack": "~3.4.1",
+    "tap-closer": "~1.0.0",
+    "tape": "~4.4.0"
   }
 }

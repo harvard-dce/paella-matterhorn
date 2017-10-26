@@ -1,0 +1,259 @@
+{"search-results": {
+  "searchTime": "1",
+  "total": "1",
+  "limit": "1",
+  "offset": "0",
+  "query": "(id:ee39049c\\-05f0\\-4d2b\\-94b4\\-625ce59f1b2b) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ADMIN OR oc_acl_read:ROLE_USER OR oc_acl_read:MATTERHORN_ADMINISTRATOR OR oc_acl_read:ROLE_OAUTH_USER OR oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:Series AND -oc_deleted:[* TO *]",
+  "result": {
+    "org": "mh_default_org",
+    "id": "ee39049c-05f0-4d2b-94b4-625ce59f1b2b",
+    "mediapackage": {
+      "start": "2016-05-27T14:53:00Z",
+      "id": "ee39049c-05f0-4d2b-94b4-625ce59f1b2b",
+      "duration": "187013",
+      "title": "Internet Governance - Lecture #10",
+      "series": 19990124037,
+      "seriestitle": "The Cyber World: Governance, Threats, Conflict, Privacy, Identity, and Commerce",
+      "creators": {"creator": "Scott Bradner, Benoit Gaucherin"},
+      "contributors": {"contributor": "jorphanos"},
+      "license": "Creative Commons 3.0: Attribution-NonCommercial-NoDerivs",
+      "type": "L10",
+      "language": "en",
+      "media": {"track": [
+        {
+          "ref": "track:track-1",
+          "type": "presenter/delivery",
+          "id": "68ed9b3b-1241-444c-b370-d73982d88a86",
+          "mimetype": "video/mp4",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/8109449b-03a0-4e8d-baf3-19c8ede6f5a6/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.mp4",
+          "checksum": {
+            "type": "md5",
+            "$": "535b68ede7de60ac7b373aa28f000bac"
+          },
+          "duration": 187013,
+          "audio": {
+            "id": "audio-1",
+            "device": "",
+            "encoder": {"type": "AAC (Advanced Audio Coding)"},
+            "channels": 2,
+            "bitrate": 96008
+          },
+          "video": {
+            "id": "video-1",
+            "device": "",
+            "encoder": {"type": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"},
+            "bitrate": 395985,
+            "framerate": 30,
+            "resolution": "960x540"
+          },
+          "live": false
+        },
+        {
+          "ref": "track:track-1",
+          "type": "presenter/delivery",
+          "id": "ff8b89d5-3d3e-422e-b46c-f35d20a29dfc",
+          "mimetype": "video/mp4",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/25198c5e-39b0-41b3-9f25-497b6f30813a/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.mp4",
+          "checksum": {
+            "type": "md5",
+            "$": "64d736fd1fcb52248f619c8aed65712a"
+          },
+          "duration": 187013,
+          "audio": {
+            "id": "audio-1",
+            "device": "",
+            "encoder": {"type": "AAC (Advanced Audio Coding)"},
+            "channels": 2,
+            "bitrate": 139648
+          },
+          "video": {
+            "id": "video-1",
+            "device": "",
+            "encoder": {"type": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"},
+            "bitrate": 66892,
+            "framerate": 30,
+            "resolution": "480x270"
+          },
+          "live": false
+        },
+        {
+          "ref": "track:track-1",
+          "type": "presenter/delivery",
+          "id": "8c809846-18e2-4bca-886a-a5da2373b2ba",
+          "mimetype": "video/mp4",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/1444a261-153c-4c0b-b622-f38acb1c12fa/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.mp4",
+          "checksum": {
+            "type": "md5",
+            "$": "0d2d8994df48e02970e865de59673ab4"
+          },
+          "duration": 187013,
+          "audio": {
+            "id": "audio-1",
+            "device": "",
+            "encoder": {"type": "AAC (Advanced Audio Coding)"},
+            "channels": 2,
+            "bitrate": 128011
+          },
+          "video": {
+            "id": "video-1",
+            "device": "",
+            "encoder": {"type": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"},
+            "bitrate": 1138698,
+            "framerate": 30,
+            "resolution": "1440x810"
+          },
+          "live": false
+        },
+        {
+          "ref": "track:track-1",
+          "type": "presenter/delivery",
+          "id": "b4dfdba3-b254-4e42-90af-7fa7d04db173",
+          "mimetype": "video/mp4",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/c8f39c4d-279a-4850-8aa2-dec7b4b538d7/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.mp4",
+          "checksum": {
+            "type": "md5",
+            "$": "eb7bdd86ef25707f5fe18bb0b08ecd6a"
+          },
+          "duration": 187013,
+          "audio": {
+            "id": "audio-1",
+            "device": "",
+            "encoder": {"type": "AAC (Advanced Audio Coding)"},
+            "channels": 2,
+            "bitrate": 128011
+          },
+          "video": {
+            "id": "video-1",
+            "device": "",
+            "encoder": {"type": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"},
+            "bitrate": 3813387,
+            "framerate": 30,
+            "resolution": "1920x1080"
+          },
+          "live": false
+        }
+      ]},
+      "metadata": {"catalog": [
+        {
+          "type": "dublincore/series",
+          "id": "dd70576a-8711-4987-b469-b482d5bfe46a",
+          "mimetype": "text/xml",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/a9701192-4d57-4a8b-a885-a703e5f02d08/dublincore.xml"
+        },
+        {
+          "type": "dublincore/episode",
+          "id": "ea13b220-e08a-46fa-92ff-85e4b7a4aaf7",
+          "mimetype": "text/xml",
+          "tags": {"tag": [
+            "archive",
+            "engage"
+          ]},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/fbd684ad-bce1-43f8-a36b-747d0fbdb3d1/dublincore.xml"
+        }
+      ]},
+      "attachments": {"attachment": [
+        {
+          "ref": "track:ff8b89d5-3d3e-422e-b46c-f35d20a29dfc",
+          "type": "presenter/player+preview",
+          "id": "3061d9ef-41fe-4215-8036-b83e396a12ae",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-6/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:8c809846-18e2-4bca-886a-a5da2373b2ba",
+          "type": "presenter/search+preview",
+          "id": "f6b04f95-9c00-4aef-ae86-dad1e8ea7991",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-7/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:68ed9b3b-1241-444c-b370-d73982d88a86",
+          "type": "presenter/search+preview",
+          "id": "704a4461-5255-48b3-b96e-7d6365148aef",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-8/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:b4dfdba3-b254-4e42-90af-7fa7d04db173",
+          "type": "presenter/search+preview",
+          "id": "2390a138-bc7d-4c63-a407-8b608d444a9d",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-9/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:ff8b89d5-3d3e-422e-b46c-f35d20a29dfc",
+          "type": "presenter/search+preview",
+          "id": "8e7c9caf-a60b-458e-ba3a-e75b363c01f5",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-10/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:8c809846-18e2-4bca-886a-a5da2373b2ba",
+          "type": "presenter/player+preview",
+          "id": "57feedba-6e52-4ca3-8229-cfae25560318",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-3/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:68ed9b3b-1241-444c-b370-d73982d88a86",
+          "type": "presenter/player+preview",
+          "id": "e2f4e3c2-b8e6-46c0-a062-647a90a70fb7",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-4/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        },
+        {
+          "ref": "track:b4dfdba3-b254-4e42-90af-7fa7d04db173",
+          "type": "presenter/player+preview",
+          "id": "616cc167-c1b6-441e-b3fd-edb1e35bd83a",
+          "mimetype": "image/jpeg",
+          "tags": {"tag": "engage"},
+          "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/ee39049c-05f0-4d2b-94b4-625ce59f1b2b/attachment-5/CSCIE45B_SP17_M02_P10_KE_conclusion_Copy_01.jpg"
+        }
+      ]},
+      "publications": ""
+    },
+    "dcExtent": 189269,
+    "dcTitle": "Internet Governance - Lecture #10",
+    "dcCreator": "Abcdefg",
+    "dcPublisher": "abc@df.edu",
+    "dcContributor": "abc",
+    "dcDescription": "Conclusion",
+    "dcCreated": "2016-05-27T10:53:00-04:00",
+    "dcLanguage": "en",
+    "dcIsPartOf": 19990124037,
+    "dcType": "L10",
+    "dcLicense": "Creative Commons 3.0: Attribution-NonCommercial-NoDerivs",
+    "ocMediapackage": "",
+    "mediaType": "AudioVisual",
+    "keywords": "",
+    "modified": "2016-05-31T11:36:09.908-04:00",
+    "score": 2.1541224
+  }
+}}

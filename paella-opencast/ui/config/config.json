@@ -1,4 +1,5 @@
 {
+	"#DCE doesn't use this config, uses config from": "dce-paella-extensions",
 	"player":{
 		"accessControlClass": "OpencastAccessControl",
 		"profileFrameStrategy": "paella.ProfileFrameStrategy",
@@ -43,7 +44,7 @@
         "skins": "resources/style"
     },
 	
-	"defaultProfile":"slide_professor",
+	"defaultProfile":"full",
 	"data":{
 		"enabled":true,
 		"dataDelegates":{

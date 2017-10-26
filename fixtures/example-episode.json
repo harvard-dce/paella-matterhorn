@@ -1,0 +1,2041 @@
+{
+  "search-results": {
+    "searchTime": "3",
+    "total": "1",
+    "limit": "1",
+    "offset": "0",
+    "query": "(id:83ebde9d\\-0812\\-4071\\-8fb7\\-a97c1472ceb9) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:Series AND -oc_deleted:[* TO *]",
+    "result": {
+      "org": "mh_default_org",
+      "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+      "mediapackage": {
+        "start": "2015-05-05T23:39:00Z",
+        "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+        "duration": "6875847",
+        "title": "Lecture 11",
+        "series": 20150221144,
+        "seriestitle": "Fundamentals of Website Development",
+        "creators": {
+          "creator": "David P. Heitmeyer"
+        },
+        "contributors": {
+          "contributor": "kking"
+        },
+        "media": {
+          "track": [
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "e4e7bb1e-d9de-4edd-97bf-464cb4980c32",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0baac156-ded4-4a25-b002-49f36ead5fb4/presentation_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "6e9e8a88594755dd6642dc96c1082bd5"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 127999
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 3235131,
+                "framerate": 30,
+                "resolution": "1920x1080",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "dc6c64f5-3106-4a1f-8f25-7f2ac7892dac",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d7086069-ec1f-4862-a75f-822cbffdee5f/presentation_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "b2a93ef7edc9410af063e3ec24a27c13"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 96000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 400131,
+                "framerate": 30,
+                "resolution": "960x540",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "29614b12-fc93-4314-950d-9d4c1004ca26",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0bcfae1e-b1c0-4e57-b582-02e833d20041/presenter_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "e3d75f3cd9ea220b748b9e3fd9c62333"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 128000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 4665958,
+                "framerate": 30,
+                "resolution": "1920x1080",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "dbab6703-f614-479f-9cd0-28df2f97241c",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/924a6001-506a-4af0-b8f3-cdc6873be638/presenter_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "67cc9713b782bc46cd78a3b64d3f0d11"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 96000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 399920,
+                "framerate": 30,
+                "resolution": "960x540",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "e9e0b250-a4b8-4cec-9c7f-9e8094ce3ff6",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c9814b83-2151-4510-b127-1c55e3f9aba7/presenter_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "1be28a9d1b62c08442de770084e0b5dd"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 128000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 1880452,
+                "framerate": 30,
+                "resolution": "1440x810",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:0a74c213-0b31-4129-8ddc-4c47baef2e31",
+              "type": "presentation/delivery",
+              "id": "7082fd48-4f7c-4d91-9fa7-8dc7b682d8b9",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/33281f8b-82c1-442a-9d0e-704035dcbe2e/presentation_trimmed.mp4",
+              "checksum": {
+                "type": "md5",
+                "$": "b5b01d618ff5a4c97abb4053b8787c9a"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 127999
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 1644528,
+                "framerate": 30,
+                "resolution": "1440x810",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            }
+          ]
+        },
+        "metadata": {
+          "catalog": [
+            {
+              "type": "dublincore/series",
+              "id": "a0c612c4-72af-45d7-a5af-d5ce93f8a504",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/04203002-6f7b-4f5d-9484-7fe6b01ccff3/dublincore.xml"
+            },
+            {
+              "type": "dublincore/episode",
+              "id": "55b3587b-746d-42d3-9985-c0042ec85a5a",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/5b37121a-615f-4def-a654-329c5903a846/dublincore.xml"
+            }
+          ]
+        },
+        "attachments": {
+          "attachment": [
+            {
+              "type": "attachment/notes",
+              "id": "0c2dfb51-2251-4390-8bc3-cd23eba4b4dd",
+              "tags": {"tag": "archive"},
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d77f6c3e-a8e0-4be2-b94d-105aa8bedd4a/1d177e7c-c8da-4fd1-a26b-b2c74412aa86/upload.txt"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:16:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "fe09d45d-313f-44b7-a5eb-b8ca30becd14",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0b96156b-1800-4e8e-b018-2bdd6ea456d2/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:12:15:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d66d0ab0-766b-4cd8-a3a5-bbaaa2dc9bbf",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e99dcded-1f2c-47cf-a39e-7bc29361b9bb/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:48:20:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "af920ac0-7cd6-45a2-bb6e-1c83ec1294c3",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a90babbc-2818-4928-9751-4c67696601b7/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:49:19:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "5f816ed0-014e-4272-b18b-4d6e8f7c17ff",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/31e53453-9488-4aae-8b8d-fd8739f94050/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:47:05:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "6938e6b5-1924-4bdf-8a64-91f338e12b19",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/bd9f1025-e363-4ee1-9f9a-da54e013fe21/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:12:02:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "670881c8-5422-4d4e-8b84-f5b56be51ea5",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e9d5ad0a-b502-4591-a08e-9765acdc25dd/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:08:37:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "82fed23e-cbc7-4209-b264-c10e48c83166",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/181fcfcc-c0f5-4fd7-abc3-0c05695c9961/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:11:50:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d7e0b954-f669-48e9-bcdb-bd157eec2497",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d87d1546-0afe-4690-9f0d-a614207b2ef6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:03:40:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f873838c-4601-43ef-b1bb-d8aa6469cb91",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/bdb10016-9fba-4010-993c-e7d353ae9599/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:47:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "49d8deb3-7c1e-4e1b-b199-64b19519e5dd",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/be5cf039-86dc-4d3e-be9a-fccf4f247f81/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac",
+              "type": "presentation/search+preview",
+              "id": "09677f4b-0875-4328-8242-771aec34efdb",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-13/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:17:01:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "bb735f0b-2b96-4300-851c-4248726fc2c5",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/21549883-688b-4a2f-9e59-692416b73afe/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:7082fd48-4f7c-4d91-9fa7-8dc7b682d8b9",
+              "type": "presentation/search+preview",
+              "id": "cbec1ef1-6ad2-41f8-a3f1-6418dc3d49b4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-14/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:17:47:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "a4676326-78ca-4a94-8cb8-8989e7e2cf85",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e03fddad-566d-4ae0-aa0e-568a2e18bedf/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:14:49:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c0194b51-8201-43eb-8df3-a2c0c6079d31",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/1044ecdf-dfbe-4858-95ed-c4d9ecb1a224/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:33:46:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "33100427-b6af-405b-83c6-9f8d5df34181",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/8c0475d2-3aae-416d-829b-79fc9c1bb9fc/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:52:51:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9ca27d68-af76-4924-bfb1-da80efbe728e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/8efda8fa-737d-45dc-92d8-b159242b6e8b/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:29614b12-fc93-4314-950d-9d4c1004ca26",
+              "type": "presenter/search+preview",
+              "id": "8c7eacb5-6cca-452b-8618-4483d671871c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-10/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:e9e0b250-a4b8-4cec-9c7f-9e8094ce3ff6",
+              "type": "presenter/search+preview",
+              "id": "9125e07a-8984-4539-8e23-c5bab4d8d8ca",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-11/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:e4e7bb1e-d9de-4edd-97bf-464cb4980c32",
+              "type": "presentation/search+preview",
+              "id": "1a3acee0-4d14-4415-8cdf-d37efc87d601",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-12/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:56:11:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "1fab2b99-866e-4d93-8a91-dd6f87e52c39",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2a734ba4-471f-4ab8-8d2e-774f2c609a60/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:23:18:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "030e1a53-c2a2-4c22-a1b8-0dc358df97c1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d2bd3d47-1de0-467e-ab26-616c53d28f93/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:12:06:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "916f04ed-ba09-482e-b6e1-60cb7272de5d",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/eeb6909a-10ff-4424-b7a8-993e86e5bf7a/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:21:28:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "58c67cb4-c528-4f38-9248-2f6283a153dc",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e9db261e-f368-4240-8a51-cd978286cd6c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:11:05:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "e8a3cd68-1ad0-488d-b20d-2b22db8ef5de",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ec35d953-7e79-44da-b6c9-82a688d37209/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:09:31:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9993a139-1e93-4e17-8400-f198e983613f",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6fd63fd6-de25-4d63-9caf-83a8b94abdf9/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:44:48:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7a393472-5891-49a6-b710-5d89fe889d50",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e8b5c920-be8b-4290-a25d-08e1d0ec1d6a/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:45:14:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "604b6324-1ee4-4467-ba55-cc5cc8b47d09",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4548f374-a736-4137-9bba-90c89c42c902/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:10:32:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9a7d08cd-d255-4e6e-8b13-6a5530db6a79",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/916eacf6-8efe-4613-aceb-35a7b9bd788e/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:09:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "495cf5dc-053c-4eaa-a150-00c9c3000cd8",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/9ec0fc71-8eb3-4291-b06e-885af1c87282/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:00:15:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "1ff0e2d1-015b-4870-ae88-f3e4a9d55085",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b28236e7-5424-459b-8a01-4d0de6c76bcd/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:17:54:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "47b44ff4-0d69-4446-9217-62c20e6fab44",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/df14c7b4-a33b-4596-b9a9-7ac6592ac9ff/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:00:33:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "be8f8378-a1f6-42ef-ba4a-037464aec611",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7b60ec28-62c0-4f86-91f4-d6e87784a458/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:09:45:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d65f048f-696d-4cce-ae58-3d657e189f7e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e8fefa9b-458c-4362-8aca-e85e18159128/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:51:58:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f36cea25-c387-4a90-994a-36b33622b8cd",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a3733312-8cbd-4a2b-909c-5f58c64a07d6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:24:45:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "800bf822-8dbe-4cdb-ad1c-74c1f456651c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/267d4a91-c198-467d-94cd-0800ad2f3b95/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:44:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d0e413eb-1397-48e9-b7aa-9ac5b5a4ddcf",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/51b87857-129a-4154-8831-59f4894d6106/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:25:55:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "e58b2801-fb4f-457b-ad72-533d07d32e85",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/539bffb9-688d-4f8d-a935-725599faf701/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:59:49:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c5c54023-fac0-4b46-97ea-fd606061ee33",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f1291fbb-844a-49b4-a089-9ee293ae2876/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:07:36:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "e078fb01-72a2-4f04-b1f8-e937e5b3ab43",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/dae62f45-a70e-4671-b565-38baab318754/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:08:47:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "cd855d6c-eb2a-4b34-a692-66ceeea9fc08",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4f9aa9b0-543f-460c-a5da-a681da6d3363/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:20:18:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "45302abc-2ed2-49b0-88ff-954656be3342",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2abff358-7ee9-4250-b362-a09d79cfbb48/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:59:26:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0068e030-3044-4dec-9b28-adb20ba7bb1e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4f343d1a-08d4-450e-b283-99b81213cfbd/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:06:45:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "b4ccaede-e5cf-48e8-97b6-9fdfc6ffed83",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6d5baa85-6bd1-47e8-b2d0-e54e656bd4cc/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:08:08:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d327a9df-e367-4e31-93a5-99eecde7f2a3",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/3b98e8bb-2f65-41c4-894c-1db5464bdf44/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:18:41:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "50f3814a-0719-4c5d-baff-3b7f265c62ed",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/500a7c77-b61b-4e3e-9c39-e007e2c8afff/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:38:12:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "8f369954-2ab8-42cf-8814-2c2f953e1aba",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b9d1bdaa-f0b6-4d88-876e-2d8c74182622/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:22:31:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "388d6a10-1145-4bf8-bccc-8d00725c0749",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/95002131-301a-4292-ab92-e8f2608f48e4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:17:24:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d1ed2c52-3a76-4b6d-8b8f-87338407aea6",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/56aa7eff-cb43-43a6-b336-472a064fe196/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:32:34:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "dfeecbd7-6cf9-42a7-8f3f-1cdb52d6c817",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b112e39a-9e40-41ff-88b4-d3324f27125c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:35:10:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0f22edea-c02b-42ed-8287-18f602601f11",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/26f681dc-428c-4092-aadd-82a7f60cb423/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:48:40:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0e597eba-c128-4eca-89ae-ba1c3ecde932",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d801a93a-a04e-445e-b133-712d15d3b7a2/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:10:20:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "82f19e6c-6686-4128-855b-8ec5e62f54a7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/841236bc-f964-4a7b-aa54-e40b81a4f443/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:51:41:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7c24c177-c7dc-42a9-8686-7db8b6c49a06",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c550ee02-9617-4ddf-81ed-1c5dccb7a3fa/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:37:03:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "79b3b7f1-e2d8-405a-9eb7-0c1e1dc8b964",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/702c504b-8f84-4ccc-a873-df45369f31da/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:50:17:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "a72a1348-573a-44f5-9936-badba421c8da",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/3c437863-3348-471b-ae7b-a43602170aa4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:20:04:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d9f92298-ea87-4c20-9ac8-2ab351c97562",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ee5896f5-c2b2-4ccd-ae45-894968d19f16/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:00:58:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "918f3961-8a1f-4a68-a111-ab0a61dacb44",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ee96d7f6-8045-4538-ba8f-8db8f5455c07/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:18:54:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "2355831a-35de-49cc-86d0-d1bdf7ffa7a1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4f09c455-a5e0-4db8-ad4d-58f60726a317/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:02:31:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f627d7bc-f142-4db7-b57d-f178a4f51ea0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c5a5904e-66d5-4a13-a840-5cc493e8f41c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:50:45:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7c9fb671-2b13-4ffd-83ba-3210d0b524d7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d37def79-2a2c-4975-982c-bc87d7720343/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:30:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d98c520d-d122-4e99-938a-35fd5be3de1a",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/132c4cf6-6445-46d0-8d55-e7a806eabbfc/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:46:44:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "aa4d2f20-e2cd-48fd-8ec7-29bb0952cf29",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/9433e61d-535a-4745-9db3-080ec019872a/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:00:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "4dbc1451-697d-4857-be27-de86f00b3de0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/14bea8cb-d1c9-4295-b97e-7935c6108859/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:01:48:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "df64fa3b-e308-4ca2-8455-86fad56e90f0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0d4ebf88-034a-41b8-9962-af5d1ec9e145/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:22:06:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c01f6599-8e24-475a-b627-760a25bd1083",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c7015e52-0c5a-4c0a-bc11-2f4bb81063c4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:27:04:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d9866993-2e57-48bd-8b53-769f8ea90ac7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b52cff32-1ba2-46b0-aa01-6be5d0558953/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:18:02:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "97c600c2-00c1-4021-9cb2-df2a0c5624b2",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/cd6aaa78-c15e-4ae6-ad8e-7f7c67ef0990/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:52:53:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f4e30f31-6ec9-4110-9a5e-8b2f4fb29088",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b5563bdc-6c5c-4463-b889-990a3867fcab/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:36:17:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7d107faa-c61b-4556-acda-ef38acff131f",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/fc342983-2bd4-45f2-8ecf-9ddc306888a9/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:28:32:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "ffce0653-265e-43ce-8a86-36c8498a2224",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6c93622e-ad45-4d8a-8c8e-5ad4137b9718/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:38:29:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "98ee2467-7554-43a3-82d0-351676b38a1e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c11bf786-eb87-455d-8ae6-86ffbd17ef81/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:10:05:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "45eec9e8-a041-45fa-acec-1987ef180382",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/1b714816-ac99-4eb2-a41f-13dfc1f547c4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:47:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "b164418f-def4-4e61-89ed-e305cb9be5b7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/49aea940-3a8d-4913-a0ce-17e48dadfbd7/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:48:07:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "63ac7a9c-977c-4abf-b0d8-15712d129d4d",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/45893dcc-4532-4010-9e1c-3b4d061d4b5e/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:58:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0a395dbf-8a74-4b15-bbcd-b265ab4f2a5d",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f1f90e51-7257-4963-a695-1f5367976d4d/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:04:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "e0d297fa-fdd4-4cff-9bc4-4e8da6c3517b",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/44f9f8e1-d962-472b-8f1e-9ce806b02158/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:20:15:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "8a19516a-5187-4046-85fe-118bf490c5ae",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/178948b5-652f-452c-b8f5-315953cb4a93/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:03:06:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "42278208-f689-430c-8677-c15b67fe9884",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/157f9a56-ac57-4f71-9db9-980e21a0921c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:01:08:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3faefab4-a181-4075-b77e-2a4698707458",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/09753f94-8635-4a34-b516-9f2d57f6d676/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:18:24:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c42fa7b4-b651-49e4-a339-da312b1ff1ef",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/9df0d0d6-8eef-4ec8-b9c8-3d8ff0a3b8df/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:49:30:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "40082bd9-ac82-4515-872f-f7e01f1c56c7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e880ec73-db3a-4c37-aec6-a0a9b48a4983/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:43:17:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7e1bd9ef-f098-4cc6-8f6a-71a9d30d0868",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b6d2d84c-b579-4b08-8aa1-e90bd6819ca1/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:21:42:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0f2a22cb-347f-4c70-8de8-f9d9baee54e2",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e71e6aa2-8897-4861-9c19-fe3be34d4124/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:46:12:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0f02127d-145b-4c8e-afeb-aa924dbf6e0c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/86cdd864-ad63-4986-8667-f9d5be6a4404/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:16:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "980fcc04-2a3e-4050-a761-5a8ef2807d66",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0c617d72-0ebe-42f4-a548-e8be78dbfc42/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:13:17:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c4a3c635-6529-4fd9-b16d-e22f724af585",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/927f1bbf-c6fa-4db7-a541-4d76eeacd416/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:49:52:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "16ebf86f-c1c0-45d9-9b04-b32f1c04b285",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f1aed25b-2a0e-41fc-b7cc-ace75ed7b9e2/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:39:41:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "b071e1ba-758c-442d-a9c7-43dd832c7707",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/5cbb1214-db32-4fd9-bb43-31fba2e33a3e/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:27:28:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "e53e763a-c473-434c-bacd-e625315d0409",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/043edc1f-2539-463d-a41c-12f4e54a80b9/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:10:43:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "795b9ef6-54cb-4c86-96b5-467c9ad717ab",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/cbf8dd38-ba95-4dd5-a8e4-9589b3e342ef/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:57:59:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "a3bcf9b5-b43f-4143-aeee-258898b36cc7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ff5beae9-d08c-48a7-92f3-83f7bd3efd29/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:03:07:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d0589f00-036b-475e-9a4f-ef84e0bb3f41",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4b9e6476-4d4b-4c9d-9e4c-06d1ed213a28/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:18:08:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7fe0b6d0-01bd-49e4-8581-65a72bf197b2",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a1571078-b2ae-478f-94a3-11f4ebedf0a3/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:02:13:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9acdca6e-db9e-4274-81e8-98eb4104f1a0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7fa2c913-6517-4d81-b642-82b98b7ea308/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:31:37:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3914aafe-5729-49b5-bc93-a172193f0350",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2a51fc76-d655-47e7-9cc9-7ff471e710ce/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:36:42:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "ae5c0496-9001-4b29-be9e-89bdf1d3d171",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7e84f1ec-ceec-486e-b188-d4dc1a24cb72/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:31:17:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "dd68125c-9ef5-4a9f-a371-e8b7577bc00c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/010ee8e9-df37-4197-b704-2fd1251b0f27/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:00:32:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "82982658-f455-4573-971c-63990f878a8a",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/962c1d27-13b3-4da9-9c76-9d02282b2fb4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:44:02:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9aaca527-d33b-4594-aed8-efb8f2bd0841",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/34d9b8f7-cc3a-49bc-8bf9-bbdfe31747a6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:21:25:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "809fe356-275c-498f-8382-9755a579f80e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/73fb40b5-847a-41cd-abb9-d47a9979756f/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:28:44:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "aa345ade-5315-4849-ab37-f8ace27cc4c4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b44b3b1c-984d-4899-aba8-88f25d0dc226/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:41:05:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3440f46e-8ff8-40cd-83fa-b62d0774f1ef",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/d4b88a91-bc39-4968-8cb8-2248880c7dca/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:38:57:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "8099ecc2-dd3f-4f1c-9cfa-13c90099527b",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/77d14058-e75e-4ddd-b21f-9a8372376340/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:03:20:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "86d42092-4292-4e1b-8676-005ebe7c3eaa",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e8ceb5d1-a5ee-44b8-a5a7-1e99cc0b1b7d/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:33:16:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "30b7abe6-c9a4-4020-8f85-a8aa2b45cfcb",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/3c38743f-3f96-4baf-bf80-71d5b49cb764/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:16:50:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "48952e30-9b40-4e34-9cfb-1c5b8dae0adf",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f93f88c9-d4be-406e-8c5b-b7b4c069a092/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:40:40:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "b20c1ed9-4d35-4760-b96a-9362850de4ef",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/42facb46-4da2-44f2-a2fe-5eb9bed27711/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:10:04:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3555fd9c-b0ca-4b88-b20a-fdce9bc1f7e1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/1ddeea06-f4e6-437c-9518-5b03dc60aeae/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:49:13:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "56ac403f-a6c4-4626-9e40-6c334ccca4ad",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ff1d77b0-f731-4dbc-bd8c-6658d88b31f6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:05:47:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "be3fbd6a-e06d-47bd-8006-482d572ab110",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/04086e1c-25c7-4f81-a762-d4682e3d65d8/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:45:27:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "4ba77a13-42e6-4193-8611-e3ce72da9f36",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/9f891f56-e4b6-48ef-9a5d-efa4362f4977/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:00:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "65033ded-9f7b-4f99-82e4-39cfce1e22b1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/df1279fc-3e45-4511-950a-b6074f71b49d/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:09:10:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9bfbbbaf-4713-43e4-92ff-11d22615cec1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7901c599-0229-4b19-abf9-8f58561e7bb9/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:07:15:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "89315661-361f-4069-9550-3e27c445f0cf",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/63ea7071-8ec9-48a1-8617-f5fb89b480a4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:10:38:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "0b7003a7-41d1-43d1-878b-7c760ac0966a",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f34cd197-2bf0-4667-b205-2a5696d1ee63/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:53:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c050e433-5d5f-43cb-9126-176496070181",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/dacc96ed-5ded-463a-a5ba-2f8b4f21830b/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:15:10:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "add8630e-2350-40fb-9d13-37632b5ba943",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ee148258-9dc4-42f0-a9e6-d505b26eb256/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:50:28:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9502a6fb-4e5f-4f66-9855-b9b45e2877f4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e4478d2e-4d29-4f5e-92ed-a073dbac310a/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:48:11:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7587cf6b-9627-4eee-8885-a7b5affd512e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/cbbbdbc8-4b3d-4d95-8981-7cfa6be76a65/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:41:58:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "721468c7-b77c-46fe-8f8c-09001c0ad575",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4ec37448-5ae1-463f-b182-e49dd042f1d1/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:48:24:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "40be606f-ac1a-4eb1-ab65-ca173eced6d0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c110494e-0c52-427a-8635-fae91909f3cf/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:23:02:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f32b46f4-39a8-42bb-ac22-ec8506ef3be4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/248bbca6-cbda-4220-8e58-ebd87b528129/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:36:04:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "5aa14ed9-65aa-4894-9e32-be8348710a95",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e586eb5c-1abe-41be-93e7-dd432641de43/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:12:54:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "4d110bde-b40a-47fb-8c52-4be0a3f44c3c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7ce492fd-4997-48e3-b365-d58900fbf7c0/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:08:56:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "241fd00f-323d-4e6d-83e2-d03b02a41652",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/78c6671c-2dd4-45d8-b45d-7ecc5bd185ab/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:40:53:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "230a2773-510e-47dd-95b2-bfc26b7d0fe1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6af112d8-9813-44bf-b2b0-972ff36b2fe6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:12:20:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "6798d1c3-440a-4d20-beec-a6f11eb3003e",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2df8734c-4317-4563-bad0-48360d425214/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:39:39:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "087b8711-c221-420e-b1e6-20e132318281",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f4314a2e-0630-4ed2-b5ec-f1b57468f850/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:28:25:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9a3cdc7d-d795-47b7-a7d1-ed216eb384ca",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b56a275a-39ad-49e7-b7ea-2758214043e4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:21:03:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7adefcfa-4c7d-432d-9345-c5a43c520fc9",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c152288a-3fc1-45f0-8c58-4f0734324aa4/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:02:04:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "687c298e-2e15-40c6-b710-68936db36dc4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6948367d-90f5-45a4-bfe6-c9020c98d27d/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:13:40:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7d02a872-1bc6-469c-afa3-6415b2cb3d61",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/6d588e3a-11eb-4e5b-a37d-608624caed59/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:43:29:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9c17bcbe-e424-4657-9c77-68ff72366942",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/ca11ce5d-0e03-4f45-8e30-9ebe36c3e10b/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:47:42:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d55fa60b-d5b6-4a8c-90db-135af2841fb5",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a1cb0c4e-4da9-46c0-80ff-6a5c48084b22/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:03:42:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9f3f81d2-103c-405b-9862-b963604f7ac1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/4ee77df8-fbe5-4d8a-b220-ddc0415067eb/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:33:03:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "309e4749-e589-4deb-b9d1-67857843ef60",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c8b896a6-dc9b-4786-8201-d2af48c47c3b/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:46:26:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "f2575f56-475c-4c2f-b7cd-aec665cff801",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/97d5cb57-6c49-4b7f-98ba-a579ea26496e/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:42:40:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "76b84591-a3f4-4247-964a-4bac54f13e94",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/b9de1a39-fffb-4c5a-8ed1-030549ff7d30/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:19:25:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d00bea04-f5b3-4572-8738-2c3a2d1f161b",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/3288574d-8f99-48b1-9a54-06d8c5bd0845/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:15:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "aad2f01c-fb5e-4c4f-afcd-6aaca7ec3ee5",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/fe61f184-4239-4eb8-94d4-f92597d8c943/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:45:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "cc29fcc8-e527-4db2-8449-eec4d97f7ccc",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/46244cd8-f713-4e3e-8023-3d0e4b20f799/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:50:27:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7f84dbfa-a881-4f60-ace3-109060517768",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/98462f2c-af00-461b-8b42-2eaa193f681e/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:25:39:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "bdf1fa78-4ac8-4cec-84a6-b7173d02389f",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/182e1933-0f79-4564-b6ac-55e9eb51c257/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:30:52:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "92638606-2ce3-4bba-88dd-5d8d8bdc1802",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/1189cf1f-a2b1-4cb4-a5c4-8200f9903c1c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:46:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "c1cc4e93-25ac-4e0a-a8db-8d383fd71836",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/e91ba1c7-07fd-4bd2-a4bc-b346346d885f/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:57:52:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "648c8e3d-eeac-427b-8ef2-26e93a7ae67c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2092d04b-7326-4dbf-8b81-6b412e20c850/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:53:06:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9d5b9169-a9dd-484a-af23-72daefccde3c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/5dcbdf0e-99c7-4910-9c59-1a8495b7ccb6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:15:33:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "9a9e4efc-56fa-49e3-b214-8fd769fea11d",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/cf25cda8-d415-488e-9fcf-243f1fad8853/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:02:48:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "741ab077-50fb-4ed5-97ca-310761d6d726",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/275c4570-9cf6-4859-a1e5-dfcf8b7cda6c/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:18:30:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d13dabd4-1b96-4c67-9a83-26902f7c1075",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/7fa3671a-7207-4187-a450-4628b2b6d0df/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:56:35:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "7991397c-b530-428f-a154-eb60d2febcc0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/2ea15b34-eafa-4962-a43a-d9f5e09e7cce/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:43:02:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d0a08308-3d94-4540-8f3d-4f902ed04160",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/76fb653d-657c-4a5d-9e76-54fd937c0655/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:e4e7bb1e-d9de-4edd-97bf-464cb4980c32",
+              "type": "presentation/player+preview",
+              "id": "3514a6f4-3d96-42b4-93dc-877b001a40fe",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac",
+              "type": "presentation/player+preview",
+              "id": "7140cb4f-6ebf-4bb7-8557-11fa638a705c",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-7/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:7082fd48-4f7c-4d91-9fa7-8dc7b682d8b9",
+              "type": "presentation/player+preview",
+              "id": "1bd4f7e1-d9f9-4d2f-81e7-e0b6833efbf7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-8/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:46:09:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "96b2b437-fa62-4c1a-abdc-38428f693fc0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/162cdcd4-37db-474e-8dee-ad8d98c648b7/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dbab6703-f614-479f-9cd0-28df2f97241c",
+              "type": "presenter/search+preview",
+              "id": "2c8b3f3d-54ba-4888-ad1a-805b015759be",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-9/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:51:01:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "a84da85c-8ba6-49a9-9c7b-ec0c30ade50f",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/0b03a75f-dcdb-4d77-86e3-b1ca4e43bb16/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:31:27:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "5447b8ce-17d1-4a1b-a06a-968363771fb9",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/be76735b-0101-497d-9a88-3941098a6001/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:35:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "4302844d-092c-454c-bf99-e98026dac8e7",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/11a95177-4bd5-49b4-969c-646b0a24b863/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dbab6703-f614-479f-9cd0-28df2f97241c",
+              "type": "presenter/player+preview",
+              "id": "8e7b8367-e0f4-425d-ab34-f3350a2b9dd1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-3/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:29614b12-fc93-4314-950d-9d4c1004ca26",
+              "type": "presenter/player+preview",
+              "id": "dbf58a1e-3a5d-4ae9-b0ac-a3b781bafcef",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-4/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:37:21:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "47f4bc31-0acc-487e-9dbc-86428d389b93",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/262a748b-9804-40c2-b266-81f6d9cab433/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:e9e0b250-a4b8-4cec-9c7f-9e8094ce3ff6",
+              "type": "presenter/player+preview",
+              "id": "3394d415-c980-4c71-9d6a-3f2544734c32",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/attachment-5/presenter_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:12:32:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "634c14d5-5159-4b45-ac54-91e6ce7c18ac",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/70fae50d-bea2-4e86-8e3c-015a8f4942fe/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:20:31:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d5921f77-77a7-4810-9424-8ff6e1608bd2",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/c7502e0a-eb60-4ca8-8192-b4b90c481a7a/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:24:21:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "cecd8fb8-b486-4fff-b7a3-081bb6eaeb12",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a9349892-bb06-40a1-b38a-922e6bb91c58/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:01:19:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "1608a60f-6984-491b-bc06-f5daf6c24217",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/a879057a-866f-4da8-bd59-85fd597f3af6/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T01:34:43:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3107628c-73e3-44d3-a2df-35d0b933b873",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/965639ec-9bd3-49a3-98ba-f4afaea7afbb/presentation_trimmed.jpg"
+            },
+            {
+              "ref": "track:dc6c64f5-3106-4a1f-8f25-7f2ac7892dac;time=T00:53:50:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3cf6de99-6670-4411-98bf-8ae975e4d61b",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://da4w749qm6awt.cloudfront.net/engage-player/83ebde9d-0812-4071-8fb7-a97c1472ceb9/f41e3b9b-b741-4990-a9d9-7a1624574514/presentation_trimmed.jpg"
+            }
+          ]
+        },
+        "publications": ""
+      },
+      "dcExtent": 8165669,
+      "dcTitle": "Lecture 11",
+      "dcCreator": "David Smith",
+      "dcPublisher": "ab@m.edu",
+      "dcContributor": "abing",
+      "dcDescription": "Grab Bag",
+      "dcCreated": "2015-05-05T19:39:00-04:00",
+      "dcSpatial": "prod-epiphan004",
+      "dcIsPartOf": 20150221144,
+      "dcType": "L11",
+      "ocMediapackage": "",
+      "mediaType": "AudioVisual",
+      "keywords": "",
+      "modified": "2015-05-06T16:23:17-04:00",
+      "score": 7.482662
+    }
+  }
+}

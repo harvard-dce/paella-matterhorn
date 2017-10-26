@@ -1,0 +1,27 @@
+{"annotations": {
+  "limit": "10",
+  "offset": "0",
+  "total": "1",
+  "annotation": [{
+    "annotationId": 63101,
+    "mediapackageId": "d5b6d58a-42d6-47dc-86cf-965561ceb356",
+    "userId": "admin",
+    "sessionId": "13cj4roikw0rj1sxp60ajaerkp",
+    "inpoint": 6,
+    "outpoint": 21,
+    "length": 0,
+    "type": "paella/visualAnnotations",
+    "isPrivate": false,
+    "value": [{
+      "_id": "e28e0130-9824-11e5-88b4-a94245a618bnd",
+      "video": "7a85bac5-fcdf-4989-8e98-6166bef80bea",
+      "user": "3818f61e-b2c4-425c-bff7-b778cb2f9966",
+      "type": "BANNER",
+      "time": 6,
+      "duration": 15,
+      "content": "{\"data\":{\"en\":\"<p>Sometimes you will need more space than just a little Ad, to write what you want to write.<\/p><p>Or simply a bigger banner to include logos and publicity.<\/p>\"},        \"pauser\":false,             \"profile\":\"\", \"style\":\"#e28e0130-9824-11e5-88b4-a94245a618bnd {color:rgba(255,255,255,1);background-color: rgba(0,0,0,0.6);text-align: justify;-moz-border-radius: 15px;border-radius: 15px;line-height: 3vmin;font-size: 1.2vw;padding: 1vw;position: absolute;bottom:70px;left:30px;right:30px;} #e28e0130-9824-11e5-88b4-a94245a618ad0:hover { background-color: rgba(0,0,0,0.8);} #e28e0130-9824-11e5-88b4-a94245a618bnd a{color: rgb(255, 230, 45);} #e28e0130-9824-11e5-88b4-a94245a618bnd a:visited{color: rgba(255, 255, 150, 0.80);}\"}",
+      "__v": 0
+    }],
+    "created": "2016-06-23T12:20:57-04:00"
+  }]
+}}

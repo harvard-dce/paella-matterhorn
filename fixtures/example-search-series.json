@@ -1,0 +1,23 @@
+{"search-results": {
+    "searchTime": "9",
+    "total": "1",
+    "limit": "1",
+    "offset": "0",
+    "query": "(id:20160119999) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ADMIN OR oc_acl_read:ROLE_USER OR oc_acl_read:MATTERHORN_ADMINISTRATOR OR oc_acl_read:ROLE_OAUTH_USER OR oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:AudioVisual AND -oc_deleted:[* TO *]",
+    "result": {
+        "org": "mh_default_org",
+        "id": "20160119999",
+        "dcExtent": -1,
+        "dcTitle": "Test Fall 2016",
+        "dcSubject": "TEST E-19999",
+        "dcCreator": "Harvard Extension School",
+        "dcPublisher": "Harvard University, DCE",
+        "dcContributor": "Henry Smith",
+        "dcDescription": "http://extension.harvard.edu",
+        "dcLanguage": "eng",
+        "mediaType": "Series",
+        "keywords": "",
+        "modified": "2015-09-04T16:37:26.202-04:00",
+        "score": 1.5416209
+    }
+}}

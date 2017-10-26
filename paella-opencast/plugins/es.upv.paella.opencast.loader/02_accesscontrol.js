@@ -13,7 +13,7 @@ var OpencastAccessControl = Class.create(paella.AccessControl, {
 	
 	canRead:function() {
 		return paella.opencast.getEpisode()
-		.then( () => { return paella_DeferredResolved(true); } )
+		.then(() => { return paella_DeferredResolved(true); } )
 		.catch(() => { return paella_DeferredResolved(false); } );
 	},
 
@@ -60,6 +60,11 @@ var OpencastAccessControl = Class.create(paella.AccessControl, {
 				paella.opencast.getUserInfo().then(
 					function(me) {
 						var isAnonymous = ((me.roles.length == 1) && (me.roles[0] == me.org.anonymousRole));
+						//#DCE Opencast 1.6x me.username, me.name vs OC 2x me.user.name, me.user.username
+		 				if (typeof me.user === "undefined") {
+		 					me.user = me;
+		 				}
+			 			// #DCE end
 						self._userData = {
 							username: me.user.username,
 							name: me.user.name || me.user.username || "",

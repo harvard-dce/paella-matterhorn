@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>
+      <style id="defaultSpeaker" tts:backgroundColor="black" tts:color="white" tts:fontFamily="SansSerif" tts:fontSize="12" tts:fontStyle="normal" tts:fontWeight="normal" tts:textAlign="left" tts:textDecoration="none"/>
+      <style id="defaultCaption" tts:backgroundColor="black" tts:color="white" tts:fontFamily="SansSerif" tts:fontSize="12" tts:fontStyle="normal" tts:fontWeight="normal" tts:textAlign="left" tts:textDecoration="none"/>
+    </styling>
+  </head>
+  <body id="ccbody" style="defaultCaption">
+    <div xml:lang="en"/></body>
+</tt>

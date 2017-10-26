@@ -58,7 +58,7 @@
 									<goal>gulp</goal>
 								</goals>
 								<configuration>
-									<arguments>paella-opencast:build</arguments>
+									<arguments>paella-opencast:build.dce</arguments>
 								</configuration>
 							</execution>
 						</executions>

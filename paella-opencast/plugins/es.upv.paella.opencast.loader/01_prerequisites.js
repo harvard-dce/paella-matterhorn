@@ -155,7 +155,18 @@ paella.opencast = new (Class ({
             if (authResult && authResult.dceReturnStatus) {
                 var returnStatus = authResult.dceReturnStatus;
                 if (("401" == returnStatus || "403" == returnStatus) && authResult.dceLocation) {
+
+                  var redirectDelay = window.parent !== window
+                    ? $("iframe", window.parent.document).index(self.frameElement) * 100
+                    : 0;
+
+                  paella.debug.log("redirecting after delay of " + redirectDelay + " milliseconds");
+                  window.setTimeout(function() {
+                    document.cookie = "done_url=" + authResult.doneUrlCookie + ";Domain=.harvard.edu;Max-Age=300;Path=/;Version=1";
                     window.location.replace(authResult.dceLocation);
+                    },
+                    redirectDelay
+                  );
                 } else {
                     var message = "Cannot access specified video; authorization failed (" + authResult.dceErrorMessage + ")";
                     paella.debug.log(message);

@@ -85,6 +85,24 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 		});
 	},
 
+	// #DCE MATT-2490 (Flashing Flash) only load swfobject script when rtmp factory calls this class
+	// This lib import is borrowed from the paella.Plugin Class
+	getDependencies: function() {
+		return ["swfobject"];
+	},
+	importLibraries: function() {
+		this.getDependencies().forEach(function(lib) {
+			var script = document.createElement('script');
+			script.type = "text/javascript";
+			script.src = 'javascript/' + lib + '.js';
+			document.head.appendChild(script);
+		});
+	},
+	initDependencies: function() {
+		this.importLibraries();
+	},
+	// #DCE end MATT-2490
+
 	_createSwfObject:function(swfFile,flashVars) {
 		var id = this.identifier;
 		var parameters = { wmode:'transparent' };

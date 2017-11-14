@@ -53,13 +53,14 @@ gulp.task('paella-opencast:prepare:source.dce',[ 'paella-opencast:prepare:source
   // #DCE MATT-2386 After paellalayer is copied, override with DCE overrisdes
   var s1 = gulp.src('vendor/paella_overrides/plugins/**').pipe(gulp.dest('build/paella/plugins'));
   var s2 = gulp.src('vendor/paella_overrides/src/**').pipe(gulp.dest('build/paella/src'));
+  var s7 = gulp.src('vendor/paella_overrides/javascript/**').pipe(gulp.dest('build/paella/javascript'));
   // #DCE MATT-2386 include DCE dce-paella-extension plugins, icons, override style, skin
   var s3 = gulp.src('node_modules/dce-paella-extensions/vendor/plugins/**').pipe(gulp.dest('build/paella/plugins'));
   var s4 = gulp.src('node_modules/dce-paella-extensions/vendor/skins/**').pipe(gulp.dest('build/paella/resources/style/skins'));
   var s5 = gulp.src('node_modules/dce-paella-extensions/resources/images/paella_icons_light_dce.png').pipe(gulp.dest('build/paella/resources/images'));
   var s6 = gulp.src('node_modules/dce-paella-extensions/resources/style/overrides.less').pipe(gulp.dest('build/paella/resources/style'));
   
-  return mergeStream(s1, s2, s3, s4, s5, s6);
+  return mergeStream(s1, s2, s3, s4, s5, s6, s7);
 });
 
 gulp.task('paella-opencast:compile.release',[ 'paella-opencast:prepare'], function (cb) {

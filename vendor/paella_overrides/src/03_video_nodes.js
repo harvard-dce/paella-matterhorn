@@ -73,29 +73,49 @@ paella.Profiles = {
 };
 
 Class ("paella.RelativeVideoSize", {
-	w:1280,h:720,
+	// #DCE, UPV's default video relative sized container is 16x9
+	w:1280, h:720,
 
 	proportionalHeight:function(newWidth) {
+		// #DCE MATT-2502 override default ratio to support DCE wide live monostream, 32x9 (16x9+16x9)
+		if (paella.dce && paella.dce.relativeVideoSize) {
+			return Math.floor(paella.dce.relativeVideoSize.h * newWidth / paella.dce.relativeVideoSize.w);
+		}
 		return Math.floor(this.h * newWidth / this.w);
 	},
 
 	proportionalWidth:function(newHeight) {
+		// #DCE MATT-2502 override default ratio to support DCE wide live monostream, 32x9 (16x9+16x9)
+		if (paella.dce && paella.dce.relativeVideoSize) {
+			return Math.floor(paella.dce.relativeVideoSize.w * newHeight / paella.dce.relativeVideoSize.h);
+		}
 		return Math.floor(this.w * newHeight / this.h);
 	},
 
 	percentVSize:function(pxSize) {
+		// #DCE MATT-2502 override default ratio to support DCE wide live monostream, 32x9 (16x9+16x9)
+		if (paella.dce && paella.dce.relativeVideoSize) {
+			return pxSize * 100 / paella.dce.relativeVideoSize.h;
+		}
 		return pxSize * 100 / this.h;
 	},
 
 	percentWSize:function(pxSize) {
+		// #DCE MATT-2502 override default ratio to support DCE wide live monostream, 32x9 (16x9+16x9)
+		if (paella.dce && paella.dce.relativeVideoSize) {
+			return pxSize * 100 / paella.dce.relativeVideoSize.w;
+		}
 		return pxSize * 100 / this.w;
 	},
 
 	aspectRatio:function() {
+		// #DCE MATT-2502 override default ratio to support DCE wide live monostream, 32x9 (16x9+16x9)
+		if (paella.dce && paella.dce.relativeVideoSize) {
+			return paella.dce.relativeVideoSize.w / paella.dce.relativeVideoSize.h;
+		}
 		return this.w/this.h;
 	}
 });
-
 
 
 Class ("paella.VideoRect", paella.DomNode, {

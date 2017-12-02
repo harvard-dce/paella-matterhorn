@@ -1,0 +1,403 @@
+{
+  "search-results": {
+    "searchTime": "3",
+    "total": "1",
+    "limit": "1",
+    "offset": "0",
+    "query": "(id:83ebde9d\\-0812\\-4071\\-8fb7\\-a97c1472ceb9) AND oc_organization:mh_default_org AND (oc_acl_read:ROLE_ANONYMOUS) AND -oc_mediatype:Series AND -oc_deleted:[* TO *]",
+    "result": {
+      "org": "mh_default_org",
+      "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+      "mediapackage": {
+        "start": "2015-05-05T23:39:00Z",
+        "id": "83ebde9d-0812-4071-8fb7-a97c1472ceb9",
+        "duration": "6875847",
+        "title": "Lecture 11",
+        "series": 20150221144,
+        "seriestitle": "Fundamentals of Website Development",
+        "creators": {
+          "creator": "David P. Heitmeyer"
+        },
+        "contributors": {
+          "contributor": "kking"
+        },
+        "media": {
+          "track": [
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "dbab6703-f614-479f-9cd0-28df2f97241c",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "url": "http://127.0.0.1:3000/engage/player/test_media/dce_live_lowbr_Dec01_17-17-41.mp4",              
+              "checksum": {
+                "type": "md5",
+                "$": "67cc9713b782bc46cd78a3b64d3f0d11"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 96000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 399920,
+                "framerate": 30,
+                "resolution": "960x540",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            },
+            {
+              "ref": "track:8f7daa53-809f-442e-ad4f-c4bec6980f13",
+              "type": "presenter/delivery",
+              "id": "e9e0b250-a4b8-4cec-9c7f-9e8094ce3ff6",
+              "mimetype": "video/mp4",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage",
+                  "multiaudio"
+                ]
+              },
+              "url": "http://127.0.0.1:3000/engage/player/test_media/dce_live_lowbr_Dec01_17-17-41.mp4",              
+              "checksum": {
+                "type": "md5",
+                "$": "1be28a9d1b62c08442de770084e0b5dd"
+              },
+              "duration": 6875847,
+              "audio": {
+                "id": "audio-1",
+                "device": "",
+                "encoder": {
+                  "type": "AAC"
+                },
+                "channels": 2,
+                "bitrate": 128000
+              },
+              "video": {
+                "id": "video-1",
+                "device": "",
+                "encoder": {
+                  "type": "AVC"
+                },
+                "bitrate": 1880452,
+                "framerate": 30,
+                "resolution": "1440x810",
+                "scantype": {
+                  "type": "Progressive"
+                }
+              },
+              "live": false
+            }
+          ]
+        },
+
+        "metadata": {
+          "catalog": [
+            {
+              "type": "captions/timedtext",
+              "id": "19a73d8e-bb6f-4d4f-9f8b-6a6f26e570f6",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "automated"
+                ]
+              },
+              "url": "http://127.0.0.1:3000/caption-file-test-server/captions.dfxp"
+            },
+            {
+              "type": "dublincore/series",
+              "id": "6d3d9c28-a8bf-4d82-9d70-10df7365472b",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d018a1aa-899a-4b35-adb8-f6c4abf3d8e5/bef8cadd-aa7f-439d-9277-898abf2058cc/series.xml"
+            },
+            {
+              "type": "dublincore/episode",
+              "id": "d5e1fc46-b912-4a3a-84fe-fb30441388da",
+              "mimetype": "text/xml",
+              "tags": {
+                "tag": [
+                  "archive",
+                  "engage"
+                ]
+              },
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d018a1aa-899a-4b35-adb8-f6c4abf3d8e5/241df3e4-fad0-48b9-9b8e-6c0de107d26c/episode.xml"
+            }
+          ]
+        },
+        "attachments": {
+          "attachment": [
+            {
+              "type": "attachment/notes",
+              "id": "0c2dfb51-2251-4390-8bc3-cd23eba4b4dd",
+              "tags": {"tag": "archive"},
+              "url": "https://d1zztbmffjw6uu.cloudfront.net/engage-player/d77f6c3e-a8e0-4be2-b94d-105aa8bedd4a/1d177e7c-c8da-4fd1-a26b-b2c74412aa86/upload.txt"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:02:33:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "fc51e74a-9484-4e1f-aa26-faffff8aacbd",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5",
+              "type": "presentation/search+preview",
+              "id": "7da18ae7-dbb6-4259-a2d4-a37b14a43baa",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:b0a7517a-e4bb-44d0-8d04-9b83ef74eea8",
+              "type": "presenter/search+preview",
+              "id": "d2fa8112-6395-4606-9d43-6b1f7eb8a79f",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:83e74317-a542-4d6e-99da-02e8810cb8bf",
+              "type": "presentation/search+preview",
+              "id": "45f126d6-13a5-4d4b-a170-c1415d69109b",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:99c0baa4-05bf-4731-a80d-301a82162bc3",
+              "type": "presentation/search+preview",
+              "id": "1187e6fd-f598-4d0c-a11f-4bcf7cf09237",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:3388a501-b6b1-472d-8695-b5caa4a9e5d6",
+              "type": "presentation/search+preview",
+              "id": "fc6344fa-6603-441b-9160-d948b6592748",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:809401f8-618e-43f9-806d-9c6c755b4fdf",
+              "type": "presenter/search+preview",
+              "id": "f3b15c20-85ef-4620-897f-29deff19a292",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:beb203f3-603a-436d-a77b-2896a8f4e53f",
+              "type": "presenter/search+preview",
+              "id": "10eb6023-77a3-453b-ac58-6989aecb79d0",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:02:23:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "cd0b3cc2-46c1-4de3-90ce-46292a2fe4e8",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:a4519c13-d03c-4667-81be-61516ccd8b9b",
+              "type": "presenter/search+preview",
+              "id": "e407d8d7-0dd5-4125-bc64-031adc49dc21",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:00:53:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "85a70f7c-8bac-40f1-b219-e95fedf16545",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:01:18:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "d012aa62-75bf-478d-a900-f827c01822f9",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:00:00:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "67e06232-0fd0-4623-9885-92fb749697b1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:83e74317-a542-4d6e-99da-02e8810cb8bf",
+              "type": "presentation/player+preview",
+              "id": "8f711057-0349-43dd-bc27-bd968bbe5f22",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:99c0baa4-05bf-4731-a80d-301a82162bc3",
+              "type": "presentation/player+preview",
+              "id": "9537ac78-c5d3-43dd-b8b2-051dc79b38f1",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:3388a501-b6b1-472d-8695-b5caa4a9e5d6",
+              "type": "presentation/player+preview",
+              "id": "c8768532-8446-49a2-9216-9da393a58373",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5",
+              "type": "presentation/player+preview",
+              "id": "cc3ae133-53de-49b0-9dbf-44d0af9fab25",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:809401f8-618e-43f9-806d-9c6c755b4fdf",
+              "type": "presenter/player+preview",
+              "id": "65bf4507-485d-4133-bb03-a304d476262a",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:beb203f3-603a-436d-a77b-2896a8f4e53f",
+              "type": "presenter/player+preview",
+              "id": "403c78e7-1692-4a9c-88b9-4af331d67c93",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:a4519c13-d03c-4667-81be-61516ccd8b9b",
+              "type": "presenter/player+preview",
+              "id": "6104069d-4c3d-4b81-8024-8a65eabf55f5",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:b0a7517a-e4bb-44d0-8d04-9b83ef74eea8",
+              "type": "presenter/player+preview",
+              "id": "df0ea7ee-223d-4c6b-b131-a2a5b86f2545",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            },
+            {
+              "ref": "track:0e5d0ef3-bfd9-422a-bc18-284e702069f5;time=T00:02:43:0F1000",
+              "type": "presentation/segment+preview",
+              "id": "3312832b-d715-4971-a0b9-e32b6e4e89b4",
+              "mimetype": "image/jpeg",
+              "tags": {
+                "tag": "engage"
+              },
+              "url": "https://dvgni8clk4vbh.cloudfront.net/engage-player/5766dbe7-d5dd-4ea3-a6df-042b327f94f2/attachment-3/VGA_1510093741_dce_prpn.jpg"
+            }
+          ]
+        },
+
+        "publications": ""
+      },
+      "dcExtent": 8165669,
+      "dcTitle": "Lecture 11",
+      "dcCreator": "David Smith",
+      "dcPublisher": "abc@y.edu",
+      "dcContributor": "abing",
+      "dcDescription": "Grab Bag",
+      "dcCreated": "2015-05-05T19:39:00-04:00",
+      "dcSpatial": "prod-epiphan004",
+      "dcIsPartOf": 20150221144,
+      "dcType": "L11",
+      "ocMediapackage": "emptied, because its not used",
+      "mediaType": "AudioVisual",
+      "keywords": "",
+      "modified": "2015-05-06T16:23:17-04:00",
+      "score": 7.482662
+    }
+  }
+}

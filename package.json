@@ -1,6 +1,6 @@
 {
   "name": "dce-paella-opencast",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "GPL-3.0",
   "description": "DCE modified UPV Opencast Paella Player v5.2.5",
   "repository": {

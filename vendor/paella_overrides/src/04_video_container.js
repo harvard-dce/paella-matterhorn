@@ -147,6 +147,14 @@ Class ("paella.VideoOverlay", paella.DomNode,{
 		setRect(rect,animate) {
 			this._rect = JSON.parse(JSON.stringify(rect));
 			var relativeSize = new paella.RelativeVideoSize();
+			// #DCE MATT-2502 override the UPV default relative video container ratio
+			// *ONLY* for the extra short and wide "3.55/1" ratio, 16x9+16x9 (32x9), DCE live stream.
+			// The override has to be set globally for access by all instances of new paella.RelativeVideoSize().
+			if (paella.dce && paella.player.videoContainer.isMonostream && rect.aspectRatio == "3.55/1") {
+				paella.dce.relativeVideoSize = paella.dce.relativeVideoSize || {};
+				paella.dce.relativeVideoSize.h=rect.height;
+				paella.dce.relativeVideoSize.w=rect.width;
+			}
 			var percentTop = relativeSize.percentVSize(rect.top) + '%';
 			var percentLeft = relativeSize.percentWSize(rect.left) + '%';
 			var percentWidth = relativeSize.percentWSize(rect.width) + '%';
@@ -1355,7 +1363,10 @@ Class ("paella.LimitedSizeProfileFrameStrategy", paella.ProfileFrameStrategy, {
 					{ aspectRatio:"1.85/1",left:0,top:14,width:1280,height:692 },
 					{ aspectRatio:"2.35/1",left:0,top:87,width:1280,height:544 },
 					{ aspectRatio:"2.41/1",left:0,top:94,width:1280,height:531 },
-					{ aspectRatio:"2.76/1",left:0,top:128,width:1280,height:463 }
+					{ aspectRatio:"2.76/1",left:0,top:128,width:1280,height:463 },
+					//#DCE MATT-2502 add 16x9+16x9 (3.55/1) monostream live stream ratio
+					// Using top 0, because relative resize box is also being overridden to 3.55/1
+					{ aspectRatio:"3.55/1",left:0,top:0,width:960,height:270}
 				]
 			};
 		}

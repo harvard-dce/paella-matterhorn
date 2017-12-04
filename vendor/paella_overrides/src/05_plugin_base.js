@@ -297,7 +297,12 @@ Class ("paella.PopUpContainer", paella.DomNode,{
 			let popUpId = identifier;
 			let btn = button;
 			$(domElement).mouseleave(function(evt) {
-				paella.player.controls.playbackControl().hidePopUp(popUpId,btn);
+				// #DCE MATT-2504 FF-captions-Off-button issue
+				// Unable to find related Mozilla mouseleave bug report, but
+				// Fix ref: https://stackoverflow.com/questions/13359545/mouseenter-mouseleave-in-firefox
+				if (evt.target.nodeName.toLowerCase() !== "select") {
+					paella.player.controls.playbackControl().hidePopUp(popUpId, btn);
+				}
 			});
 		}
 		

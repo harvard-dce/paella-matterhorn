@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Redirect to Paella Player Page</title>
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        <script type="text/javascript">
+            // <!--
+                $(document).ready(function () {
+                    // #DCE OPC-54-test-local Same solution as 1.x
+                    // This is used so that producers get the engage login page when testing local.
+                    // The etc/security/mh_default_org.xml protects the url /engage/player/watchAdminRedirect.html
+                    // so that producers get the login page the first time. After they log in to the
+                    // engage server, they are redirected to the usual watch.html, which ROLE_ANONYMOUS can access
+                    var redirectPath = "/engage/player/watch.html";
+                    
+                    // Get URL query param
+                    // Reference: http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery
+                    var getURLParameter = function (name) {
+                        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) ||[, ""])[1].replace(/\+/g, '%20')) || null;
+                    }
+                    
+                    window.location = redirectPath + "?id=" + getURLParameter('id');
+                });//-->
+        </script>
+    </head>
+    <body>
+        <div style="valign:center; text-align:center;"> Loading... </div>
+    </body>
+</html>

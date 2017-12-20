@@ -1,6 +1,6 @@
 {
   "name": "dce-paella-opencast",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "GPL-3.0",
   "description": "DCE modified UPV Opencast Paella Player v5.2.5",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/harvard-dce/paella-matterhorn.git"
   },
   "dependencies": {
-    "dce-paella-extensions": "github:harvard-dce/dce-paella-extensions#v1.7.1",
+    "dce-paella-extensions": "1.7.2",
     "express": "^4.15.4",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",

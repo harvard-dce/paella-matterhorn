@@ -128,10 +128,9 @@ Class ("paella.RTMPVideo", paella.VideoElementBase,{
 
 			var text = document.createElement('div');
 
-			text.innerHTML = base.dictionary.translate("You need at least Flash player 9 installed.") + "<br>" +
-				base.dictionary.translate("Please go to {0} and install it.")
-					.replace("{0}", "<a style='color: #800000; text-decoration: underline;' href='http://www.adobe.com/go/getflash'>http://www.adobe.com/go/getflash</a>");
-
+                        // #DCE MATT-2429-Change-Flashdownload-text-ifChrome-1x
+			text.innerHTML = base.dictionary.translate("You need a Flash player to watch this.") + "<br>" +
+				"<a style='color: #800000; text-decoration: underline;' href='http://www.adobe.com/go/getflash'>Click to enable or download Adobe Flash Player</a>";
 			var link = document.createElement('a');
 			link.setAttribute("href", "http://www.adobe.com/go/getflash");
 			link.innerHTML = '<img style="margin:5px;" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtener Adobe Flash Player" />';
